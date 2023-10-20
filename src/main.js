@@ -13,16 +13,17 @@ import App from './App.vue'
 // import 'material-design-icons/iconfont/material-icons.css'
 
 // Define application routes
-const routes = [{ path: '/', component: App }]
+// const routes = [{ path: '/', component: App }]
 
-// Initialize Vue router with history mode and predefined routes
-const router = createRouter({
-  history: createWebHistory(),
-  routes,
-})
+// // Initialize Vue router with history mode and predefined routes
+// const router = createRouter({
+//   history: createWebHistory(),
+//   routes,
+// })
 
 // Create a new Vue application and use the router
-const app = createApp(App).use(router)
+const app = createApp(App)
+//.use(router)
 
 // // Define an empty object to hold the fetched colors
 // let fetchedColors = {}
