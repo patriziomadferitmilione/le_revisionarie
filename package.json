@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "daje": "git add . && git commit -m 'daje' && git push -u origin main"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@mdi/font": "^7.3.67",
