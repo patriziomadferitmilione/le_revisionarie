@@ -23,6 +23,7 @@ const routes = [
   { path: '/blog', component: IlBlog },
   { path: '/services', component: ServiziEditoriali },
   { path: '/contacts', component: Contatti },
+  { path: '/:catchAll(.*)', redirect: '/' },
 ]
 
 // Initialize Vue router with history mode and predefined routes

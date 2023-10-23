@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && git add dist -f && git commit -m 'Adding dist' && git subtree push --prefix dist origin gh-pages",
+    "daje": "git add . && git commit -m 'daje' && git push -u origin main"
   },
   "dependencies": {
     "@mdi/font": "^7.3.67",

@@ -1,5 +1,5 @@
 <template>
-  <w-toolbar bottom fixed shadow height="10vh">
+  <w-toolbar bottom shadow height="10vh">
     <div class="title2">Le Revisionarie</div>
     <div class="spacer"></div>
 
