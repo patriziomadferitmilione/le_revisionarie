@@ -18,7 +18,7 @@ import Contatti from './components/views/Contatti.vue'
 
 // Define application routes
 const routes = [
-  { path: '/', component: Home },
+  { path: '/', component: Home, name: 'home' },
   { path: '/about', component: ChiSiamo },
   { path: '/blog', component: IlBlog },
   { path: '/services', component: ServiziEditoriali },
