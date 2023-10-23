@@ -43,37 +43,38 @@ fetch('/colors.json')
   .then((response) => response.json())
   .then((colors) => {
     fetchedColors = colors
+    // Initialize WaveUI after fetching colors
+    app.use(WaveUI, {
+      on: '#app',
+      breakpoints: {
+        xs: 600,
+        sm: 900,
+        md: 1200,
+        lg: 1700,
+        xl: 9999,
+      },
+      colors: fetchedColors,
+      css: {},
+      icons: [],
+      iconsLigature: 'material-icons',
+      notificationManager: {
+        align: 'right',
+        transition: 'default',
+      },
+      presets: {
+        'w-button': {
+          color: 'light-blue-light4',
+          bgColor: 'deep-purple-light2',
+          tile: true,
+          outline: true,
+          lg: true,
+        },
+        'w-accordion': { expandIconRotate90: true },
+        'w-overlay': { bgColor: 'pink', opacity: 0.3 },
+      },
+      theme: 'dark',
+    })
+    // Mount the app
+    app.mount('#app')
   })
   .catch((error) => console.error('Error fetching color data:', error))
-
-app.use(WaveUI, {
-  on: '#app',
-  breakpoints: {
-    xs: 600,
-    sm: 900,
-    md: 1200,
-    lg: 1700,
-    xl: 9999,
-  },
-  colors: fetchedColors, // Using the fetched colors
-  css: {},
-  icons: [],
-  iconsLigature: 'material-icons',
-  notificationManager: {
-    align: 'right',
-    transition: 'default',
-  },
-  presets: {
-    'w-button': {
-      color: 'light-blue-light4',
-      bgColor: 'deep-purple-light2',
-      tile: true,
-      outline: true,
-      lg: true,
-    },
-    'w-accordion': { expandIconRotate90: true },
-    'w-overlay': { bgColor: 'pink', opacity: 0.3 },
-  },
-  theme: 'dark',
-})
-app.mount('#app')

@@ -1,7 +1,8 @@
 <template>
   <w-toolbar class="navbar" bg-color="white" height="15vh" fixed shadow>
+    <div class="spacer"></div>
     <router-link to="/">
-      <div class="title2">Le Revisionarie</div>
+      <img class="logo" src="../../images/logo.png" alt="logo" />
     </router-link>
     <div class="spacer"></div>
     <router-link class="r_link" to="/about" active-class="active-link">
@@ -16,6 +17,7 @@
     <router-link class="r_link" to="/contacts" active-class="active-link">
       <span class="navbar_titles">Contatti</span>
     </router-link>
+    <div class="spacer"></div>
   </w-toolbar>
 </template>
 
@@ -39,7 +41,11 @@ export default {
 
 <style>
 .navbar {
-  font-size: 25px;
+  font-size: 22px;
+}
+
+.logo {
+  width: 15vw;
 }
 
 .active-link {

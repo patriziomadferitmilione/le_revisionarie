@@ -15,6 +15,8 @@
       </div>
     </w-card>
 
+    <div class="spacer" style="height: 5vh"></div>
+
     <!-- CARDS SERVICES-->
     <w-flex wrap class="text-center cards">
       <!-- First Card -->
@@ -64,17 +66,21 @@
       </w-flex-item>
     </w-flex>
 
-    <!-- <w-flex wrap class="text-center">
-      <w-flex-item class="xs6 md4 pa1">
-        <div class="primary--bg py3">Left Div</div>
-      </w-flex-item>
-      <w-flex-item class="xs6 md8 pa1">
-        <div class="primary--bg py3">Right Div</div>
-      </w-flex-item>
-    </w-flex> -->
+    <div class="spacer" style="height: 10vh"></div>
 
     <!-- CARDS PEOPLE -->
-    <w-flex wrap class="text-center cards">
+    <w-flex wrap class="text-center cards" style="width: 100vw">
+      <h1>Il nostro campo d’azione</h1>
+      <p class="blog_sub">
+        Il progetto Le Revisionarie nasce nel 2021 con l’obiettivo di lavorare
+        al fianco degli aspiranti scrittori nel loro percorso di creazione e di
+        aiutarli a trasformare la loro idea in un libro. I servizi offerti dallo
+        Studio coprono diverse fasi di lavorazione, dalla progettazione
+        all’editing, dalla redazione alla revisione, passando anche attraverso
+        la formazione e il coaching. Crediamo fermamente che non si nasca
+        scrittori, ma che sia possibile diventarlo attraverso la dedizione e
+        l’impegno.
+      </p>
       <!-- First Card -->
       <w-flex-item class="lg4 md12 sm12 xs12 pa1">
         <w-card class="card_people ml3" shadow bg-color="error-dark2">
@@ -139,43 +145,159 @@
       </w-flex-item>
     </w-flex>
 
+    <div class="spacer" style="height: 60vh"></div>
+
     <!-- BLOG POSTS -->
     <w-flex wrap class="text-center">
-      <!-- Column 1 -->
-      <div class="lg3 md6 sm12 xs12 pa1">
-        <div class="primary--bg py3">Column 1</div>
+      <div
+        class="text-center"
+        style="width: 100vw; margin-top: 25vh; margin-bottom: 5vh, text-align: justify"
+      >
+        <h1>Il Blog</h1>
+        <br />
+        <p>
+          In questa sezione trovi la raccolta di tutti gli articoli di
+          approfondimento su scrittura, editoria e storytelling.
+        </p>
       </div>
-
-      <!-- Column 2 -->
-      <div class="lg3 md6 sm12 xs12 pa1">
-        <div class="primary--bg py3">Column 2</div>
-      </div>
-
-      <!-- Column 3 -->
-      <div class="lg3 md6 sm12 xs12 pa1">
-        <div class="primary--bg py3">Column 3</div>
-      </div>
-
-      <!-- Column 4 -->
-      <div class="lg3 md6 sm12 xs12 pa1">
-        <div class="primary--bg py3">Column 4</div>
-      </div>
+      <w-flex-item
+        v-for="(card, index) in cards"
+        :key="index"
+        class="blog_card lg3 md6 sm12 xs12 pa1"
+      >
+        <w-card shadow bg-color="error-dark2">
+          <img :src="card.image" alt="Blog post image" class="card-image" />
+          <w-toolbar class="card_bottom_blog" bottom shadow>
+            <div class="blog_title">{{ card.title }}</div>
+            <p class="blog_content">{{ card.content.slice(0, 30) }}...</p>
+          </w-toolbar>
+        </w-card>
+      </w-flex-item>
     </w-flex>
 
-    <div style="height: 90vh"></div>
+    <div style="height: 10vh"></div>
+
+    <w-card bg-color="error-dark2" class="news" shadow>
+      <div class="form">
+        <!-- Your alert component -->
+        <w-alert :success="success" :error="error" :info="!success && !error">
+          {{
+            !success && !error
+              ? 'The form is still pristine'
+              : success
+              ? 'Success'
+              : 'Error'
+          }}
+        </w-alert>
+
+        <p>The form has been validated {{ validated }} time(s).</p>
+
+        <w-form
+          @validate="handleValidate"
+          @success="handleSuccess"
+          @error="handleError"
+        >
+          <w-input label="Name" :validators="[validators.required]"></w-input>
+          <w-input
+            class="mt3"
+            label="Surname"
+            :validators="[validators.required]"
+          ></w-input>
+          <w-input
+            class="mt3"
+            label="Email"
+            :validators="[validators.required, validators.email]"
+          ></w-input>
+
+          <button type="submit">Iscriviti</button>
+        </w-form>
+      </div>
+    </w-card>
   </div>
 </template>
-<script>
-export default {
-  data() {
-    return {
-      // to be added to w-card
-      //:image="`${baseUrl}/images/copertina.png`"
-      // just uncommment
-      //baseUrl: import.meta.env.BASE_URL,
-    }
-  },
+<script setup>
+import { ref } from 'vue'
+
+const success = ref(null)
+const error = ref(null)
+const validated = ref(0)
+
+const validators = {
+  required: (value) => !!value || 'This field is required',
+  email: (value) => /.+@.+\..+/.test(value) || 'Invalid email',
 }
+
+const handleValidate = () => {
+  validated.value++
+  success.value = error.value = false
+}
+
+const handleSuccess = () => {
+  success.value = true
+}
+
+const handleError = () => {
+  error.value = true
+}
+
+// Fake data to populate the cards
+const cards = ref([
+  {
+    title: 'Titolo articolo',
+    content: "Inizio dell'articolo...",
+    image: '../../../images/blog_post_1.jpg',
+  },
+  {
+    title: 'Titolo articolo',
+    content: "Inizio dell'articolo...",
+    image: '../../../images/blog_post_2.jpg',
+  },
+  {
+    title: 'Titolo articolo',
+    content: "Inizio dell'articolo...",
+    image: '../../../images/blog_post_3.jpg',
+  },
+  {
+    title: 'Titolo articolo',
+    content: "Inizio dell'articolo...",
+    image: '../../../images/blog_post_4.jpg',
+  },
+  {
+    title: 'Titolo articolo',
+    content: "Inizio dell'articolo...",
+    image: '../../../images/blog_post_5.jpg',
+  },
+  {
+    title: 'Titolo articolo',
+    content: "Inizio dell'articolo...",
+    image: '../../../images/blog_post_6.jpg',
+  },
+  {
+    title: 'Titolo articolo',
+    content: "Inizio dell'articolo...",
+    image: '../../../images/blog_post_7.jpg',
+  },
+  {
+    title: 'Titolo articolo',
+    content: "Inizio dell'articolo...",
+    image: '../../../images/blog_post_8.jpg',
+  },
+  {
+    title: 'Titolo articolo',
+    content: "Inizio dell'articolo...",
+    image: '../../../images/blog_post_9.jpg',
+  },
+  {
+    title: 'Titolo articolo',
+    content: "Inizio dell'articolo...",
+    image: '../../../images/blog_post_10.jpg',
+  },
+  {
+    title: 'Titolo articolo',
+    content: "Inizio dell'articolo...",
+    image: '../../../images/blog_post_11.jpg',
+  },
+])
 </script>
 <style scoped>
 .home {
@@ -331,5 +453,26 @@ export default {
 
 .social:hover {
   transform: scale(1.3);
+}
+
+.news {
+  width: 100vw;
+  height: fit-content;
+  padding: 1rem;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+.blog_card {
+  max-height: 50vh;
+}
+
+.blog_sub {
+  font-size: 20px;
+  padding: 2rem 5rem;
+  text-align: justify;
 }
 </style>
