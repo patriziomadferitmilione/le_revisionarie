@@ -159,33 +159,7 @@
     <div style="height: 50vh"></div>
   </div>
 </template>
-<script setup>
-import { ref } from 'vue'
-
-const success = ref(null)
-const error = ref(null)
-const validated = ref(0)
-
-const validators = {
-  required: (value) => !!value || 'This field is required',
-  email: (value) => /.+@.+\..+/.test(value) || 'Invalid email',
-}
-
-const handleValidate = () => {
-  validated.value++
-  success.value = error.value = false
-}
-
-const handleSuccess = () => {
-  success.value = true
-}
-
-const handleError = () => {
-  error.value = true
-}
-
-const cards = ref([])
-</script>
+<script setup></script>
 <style scoped>
 .home {
   display: flex;
