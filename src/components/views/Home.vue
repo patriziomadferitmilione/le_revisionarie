@@ -38,10 +38,10 @@
           <br />
           <button>Ti raccontiamo la nostra storia</button>
         </p>
-        <img src="/images/IMG_5927.jpg" alt="home_header" />
+        <img src="/images/IMG_5927.JPG" alt="home_header" />
       </div>
       <div class="header_card_2">
-        <img src="/images/IMG_5955.jpg" alt="home_header" />
+        <img src="/images/IMG_5955.JPG" alt="home_header" />
 
         <p>
           Ma nasce anche dalla nostra <b>amicizia</b>: è il nostro legame a dare
