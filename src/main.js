@@ -15,6 +15,9 @@ import ChiSiamo from './components/views/ChiSiamo.vue'
 import IlBlog from './components/views/IlBlog.vue'
 import ServiziEditoriali from './components/views/ServiziEditoriali.vue'
 import Contatti from './components/views/Contatti.vue'
+import BlogCreator from './components/views/BlogCreator.vue'
+import LandingPage from './components/views/LandingPage.vue'
+import Typeform from './components/views/Typeform.vue'
 
 // Define application routes
 const routes = [
@@ -23,6 +26,9 @@ const routes = [
   { path: '/blog', component: IlBlog },
   { path: '/services', component: ServiziEditoriali },
   { path: '/contacts', component: Contatti },
+  { path: '/blogcreator', component: BlogCreator },
+  { path: '/landingpage', component: LandingPage },
+  { path: '/typeform', component: Typeform },
   { path: '/:catchAll(.*)', redirect: '/' },
 ]
 

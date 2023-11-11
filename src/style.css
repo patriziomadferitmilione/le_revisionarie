@@ -1,23 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Covered By Your Grace */
+@font-face {
+  font-family: 'Covered By Your Grace';
+  src: url('/fonts/CoveredByYourGrace.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* DM Sans - Regular */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/DMSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* DM Sans - Medium */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/DMSans-Medium.ttf') format('truetype');
+  font-weight: 500; /* Medium is often 500 weight */
+  font-style: normal;
+}
+
+/* DM Sans - Medium Italic */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/DMSans-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* DM Sans - Bold */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/DMSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* DM Sans - Bold Italic */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/DMSans-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* DM Sans - Italic */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/DMSans-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Roboto Slab - Regular */
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('/fonts/RobotoSlab-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Roboto Slab - Light */
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('/fonts/RobotoSlab-Light.ttf') format('truetype');
+  font-weight: 300; /* Light is often 300 weight */
+  font-style: normal;
+}
+
+/* Roboto Slab - Thin */
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('/fonts/RobotoSlab-Thin.ttf') format('truetype');
+  font-weight: 100; /* Thin is often 100 weight */
+  font-style: normal;
+}
+
+/* Roboto Slab - Bold */
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('/fonts/RobotoSlab-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
 
 html {
   background-color: #f7ebeb;
   color: #212121;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 :root {
   /* ORIGINAL */
-  --primary: #c92c47;
-  --secondary: #68e1fd;
-  --shadow: var(--);
+  --one: #61012d;
+  --two: #cdb291;
+  --three: #f6faf2;
+  --four: #2b3a30;
   --link: #fb8c00;
   --link_light: #833500;
   --link_hover: #46849b;
@@ -26,7 +113,7 @@ body {
   --blue: #214bca;
   --light_green: #63b42d;
   --brown: #5e3b00;
-  --white: #f7ebeb;
+  --white: #f6faf2;
   --red: #d32222;
   --input_background: rgb(24, 48, 57);
 }
@@ -58,17 +145,18 @@ h4,
 h5,
 h6 {
   color: var(--primary);
+  font-family: 'DM Sans', sans-serif;
 }
 
 button {
-  background: var(--primary);
+  font-family: 'DM Sans', sans-serif;
+  background: var(--one);
   color: var(--white);
   padding: 0.5rem;
   margin: 0.5rem;
   border: none;
   border-radius: 5px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: var(--one) 0px 6px 12px -2px, var(--one) 0px 3px 7px -3px;
 }
 
 button:hover {
