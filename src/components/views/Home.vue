@@ -74,7 +74,7 @@
           <b>sai perché?</b> Perché <b>solo</b> tu puoi raccontarla, nessun
           altro.
         </p>
-        <img src="/images/test.png" alt="home_header" />
+        <img src="/images/guida.jpg" alt="home_header" />
       </div>
     </w-card>
 
@@ -100,8 +100,7 @@
       <div class="service">
         <div class="service-content">
           <div class="service-image">
-            <!-- <w-icon size="5em"> fa fa-keyboard-o </w-icon> -->
-            <img src="/images/typewriter.png" alt="" />
+            <img src="/images/typewriter.png" alt="mockup" />
           </div>
           <h2>On Shelf</h2>
           <p>
@@ -117,7 +116,7 @@
 
     <w-card class="header">
       <div class="header_card_4">
-        <img src="/images/news.png" alt="home_header" />
+        <img src="/images/mockup.jpg" alt="home_header" />
 
         <div class="right">
           <p>
@@ -155,8 +154,6 @@
         </div>
       </div>
     </w-card>
-
-    <div style="height: 50vh"></div>
   </div>
 </template>
 <script setup></script>
@@ -267,8 +264,8 @@ form {
 .service-link {
   margin-top: 1rem;
   padding: 0.5rem 1rem;
-  background: #000; /* Button background color */
-  color: #fff; /* Button text color */
+  background: #000;
+  color: #fff;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -291,15 +288,15 @@ button {
 .subscription-form {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem; /* Adjust the space between form elements */
+  gap: 0.5rem;
 }
 
 .subscription-form input[type='text'],
 .subscription-form input[type='email'] {
   padding: 0.5rem;
-  margin-bottom: 0.5rem; /* Space between inputs */
-  border: 1px solid #ccc; /* Border color */
-  border-radius: 4px; /* Rounded corners */
+  margin-bottom: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .subscription-form button {
@@ -313,13 +310,13 @@ button {
 }
 
 .subscription-form button:hover {
-  background-color: #e60094; /* Button hover color */
+  background-color: #e60094;
 }
 
 .privacy-check {
   display: flex;
   align-items: center;
-  gap: 0.5rem; /* Space between checkbox and label */
+  gap: 0.5rem;
   margin-top: 0.5rem;
 }
 
