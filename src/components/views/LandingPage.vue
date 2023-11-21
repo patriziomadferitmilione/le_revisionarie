@@ -20,7 +20,7 @@
     <section class="about-book">
       <div class="about-image">
         <!-- Image of a person using a tablet -->
-        <img src="/images/person_tablet.png" alt="Persona con tablet" />
+        <img src="/images/book_1.png" alt="Persona con tablet" />
       </div>
       <div class="about-content">
         <h2>Alcune parole sul libro</h2>
