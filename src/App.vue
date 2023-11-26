@@ -13,7 +13,9 @@ export default {
 
 <template>
   <Navbar />
-  <router-view class="view" />
+  <div class="view">
+    <router-view />
+  </div>
   <Bottom />
 </template>
 

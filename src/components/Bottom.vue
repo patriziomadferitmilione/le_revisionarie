@@ -21,7 +21,7 @@
         <a href="elisa.cioffi@lerevisionarie.com">
           <w-icon color="white" size="1em"> fa fa-envelope </w-icon>
           &nbsp;
-          <span style="color: white">elisa.cioffi@lerevisionarie.com</span></a
+          <span style="color: white">info@lerevisionarie.com</span></a
         >
       </div>
     </w-card>
@@ -116,6 +116,5 @@ export default {}
 
 .inside_card3:hover {
   cursor: pointer;
-  transform: scale(1.1);
 }
 </style>

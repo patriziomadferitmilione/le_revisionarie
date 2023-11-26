@@ -13,11 +13,18 @@ import 'font-awesome/css/font-awesome.min.css'
 import Home from './components/views/Home.vue'
 import ChiSiamo from './components/views/ChiSiamo.vue'
 import IlBlog from './components/views/IlBlog.vue'
-import ServiziEditoriali from './components/views/ServiziEditoriali.vue'
 import Contatti from './components/views/Contatti.vue'
 import BlogCreator from './components/views/BlogCreator.vue'
 import LandingPage from './components/views/LandingPage.vue'
 import Typeform from './components/views/Typeform.vue'
+
+import ServiziEditoriali from './components/views/ServiziEditoriali.vue'
+import Copywriting from './components/servizi/Copywriting.vue'
+import CorrezioneBozze from './components/servizi/CorrezioneBozze.vue'
+import Ghostwriting from './components/servizi/Ghostwriting.vue'
+import Impaginazione from './components/servizi/Impaginazione.vue'
+import ScritturaGuidata from './components/servizi/ScritturaGuidata.vue'
+import ValutazioneManoscritti from './components/servizi/ValutazioneManoscritti.vue'
 
 // Define application routes
 const routes = [
@@ -25,6 +32,12 @@ const routes = [
   { path: '/about', component: ChiSiamo },
   { path: '/blog', component: IlBlog },
   { path: '/services', component: ServiziEditoriali },
+  { path: '/copy', component: Copywriting },
+  { path: '/draft', component: CorrezioneBozze },
+  { path: '/ghost', component: Ghostwriting },
+  { path: '/assess', component: ValutazioneManoscritti },
+  { path: '/layout', component: Impaginazione },
+  { path: '/guided', component: ScritturaGuidata },
   { path: '/contacts', component: Contatti },
   { path: '/blogcreator', component: BlogCreator },
   { path: '/landingpage', component: LandingPage },

@@ -11,9 +11,19 @@
     <router-link class="r_link" to="/blog" active-class="active-link">
       <span class="navbar_titles">Il Blog</span>
     </router-link>
-    <router-link class="r_link" to="/services" active-class="active-link">
-      <span class="navbar_titles">Servizi Editoriali</span>
-    </router-link>
+    <div class="dropdown">
+      <router-link class="dropbtn" to="/services"
+        >Servizi Editoriali</router-link
+      >
+      <div class="dropdown-content">
+        <router-link to="/draft">Correzione Bozze</router-link>
+        <router-link to="/ghost">Ghostwriting</router-link>
+        <router-link to="/guided">Scrittura Guidata</router-link>
+        <router-link to="/copy">Copywriting</router-link>
+        <router-link to="/assess">Valutazione Manoscritti</router-link>
+        <router-link to="/layout">Impaginazione</router-link>
+      </div>
+    </div>
     <router-link class="r_link" to="/contacts" active-class="active-link">
       <span class="navbar_titles">Contatti</span>
     </router-link>
@@ -34,15 +44,34 @@ export default {
       console.log(key, keyPath)
     }
 
+    const showDropdown = ref(false)
+    let openTimeout = null
+
+    function openDropdown() {
+      console.log('Dropdown should open now')
+      showDropdown.value = true
+    }
+
+    function closeDropdown() {
+      console.log('Dropdown should close after a delay')
+      setTimeout(() => {
+        showDropdown.value = false
+        console.log('Dropdown should be closed now')
+      }, 200) // 200ms delay before closing the dropdown
+    }
+
     return {
       activeIndex,
       handleSelect,
+      showDropdown,
+      openDropdown,
+      closeDropdown,
     }
   },
 }
 </script>
 
-<style>
+<style scoped>
 .navbar {
   font-size: 22px;
   background-color: var(--white) !important;
@@ -82,9 +111,78 @@ a:hover {
   color: var(--link);
 }
 
+.menu-item {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  box-shadow: none;
+}
+
+.dropbtn {
+  background-color: transparent !important;
+  color: var(--one);
+  padding: 1rem;
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+}
+
+.dropbtn.router-link-active {
+  font-weight: bold;
+  border-bottom: 2px solid var(--one);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  background-color: var(--white);
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--white);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: var(--light-grey);
+}
+
 @media screen and (max-width: 430px) {
   .navbar_titles {
     display: none;
+  }
+
+  .dropbtn {
+    padding: 0.5rem;
+    font-size: 18px;
+  }
+
+  .dropdown-content {
+    box-shadow: none;
+  }
+
+  .dropdown-content a {
+    padding: 8px 12px;
   }
 }
 </style>
