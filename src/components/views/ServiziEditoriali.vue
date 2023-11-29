@@ -1,9 +1,9 @@
 <template>
   <div class="servizi">
-    <h1>Servizi Editoriali</h1>
-  </div>
+    <div class="header">
+      <h1>Servizi Editoriali</h1>
+    </div>
 
-  <div class="content">
     <p>
       Il nostro studio si impegna a seguire il testo in tutte le sue fasi di
       lavorazione per accompagnarlo nella sua trasformazione in prodotto
@@ -12,126 +12,147 @@
       ghostwriting e della formazione degli aspiranti scrittori attraverso corsi
       pensati apposta per loro.
     </p>
-    <div class="grid-container">
-      <div class="grid-item">
-        <img src="@/assets/vue.svg" alt="Ghostwriting" />
-        <h2>GHOSTWRITING</h2>
-        <p>
-          Se hai un'idea geniale per un libro, ma non sai come metterla nero su
-          bianco, il nostro servizio di Ghostwriting fa al caso tuo!
-        </p>
-        <button @click="navigateTo('/ghost')">Vai alla sezione</button>
+
+    <!-- Services Section -->
+    <section class="services">
+      <div class="spacer"></div>
+      <div class="service">
+        <div class="service-content">
+          <div class="service-image">
+            <!-- <w-icon size="5em"> fa fa-compass</w-icon> -->
+            <img src="/images/meridian.png" alt="" />
+          </div>
+          <h2>In Self</h2>
+          <p>
+            In self, ma non da solo: un percorso pensato per affiancare lo
+            scrittore che vuole autopubblicarsi.
+          </p>
+          <br />
+          <button>Scopri</button>
+        </div>
       </div>
-      <div class="grid-item">
-        <img src="@/assets/vue.svg" alt="Scrittura Guidata" />
-        <h2>SCRITTURA GUIDATA</h2>
-        <p>
-          Pensato per gli scrittori che desiderano un editor sempre al tuo
-          fianco, il nostro servizio di scrittura guidata renderà il tuo romanzo
-          nel cassetto un prodotto pronto e competitivo per il mercato
-          editoriale.
-        </p>
-        <button @click="navigateTo('/guided')">Vai alla sezione</button>
+      <div class="spacer"></div>
+      <div class="service">
+        <div class="service-content">
+          <div class="service-image">
+            <img src="/images/typewriter.png" alt="mockup" />
+          </div>
+          <h2>On Shelf</h2>
+          <p>
+            Se il tuo sogno è vedere il tuo libro sugli scaffali delle librerie,
+            il primo passo e farlo uscire dal cassetto. Al resto pensiamo noi!
+          </p>
+          <br />
+          <button>Scopri</button>
+        </div>
       </div>
-      <div class="grid-item">
-        <img src="@/assets/vue.svg" alt="Copywriting" />
-        <h2>COPYWRITING</h2>
-        <p>
-          Hai un sito web o un blog e hai bisogno di una penna che ti aiuti a
-          ottimizzare i tuoi contenuti in ottica SEO? Dai un'occhiata al nostro
-          servizio di copywriting!
-        </p>
-        <button @click="navigateTo('/copy')">Vai alla sezione</button>
-      </div>
-      <div class="grid-item">
-        <img src="@/assets/vue.svg" alt="Valutazione Manoscritti" />
-        <h2>VALUTAZIONE MANOSCRITTI</h2>
-        <p>
-          Se hai già un libro nel cassetto e vorresti un parere professionale,
-          puoi usufruire del nostro servizio di lettura integrale a cui seguirà
-          l'elaborazione di una scheda valutativa.
-        </p>
-        <button @click="navigateTo('/assess')">Vai alla sezione</button>
-      </div>
-      <div class="grid-item">
-        <img src="@/assets/vue.svg" alt="Correzione Bozze" />
-        <h2>CORREZIONE BOZZE</h2>
-        <p>
-          Ci occuperemo di ripulire il testo da refusi, errori grammaticali,
-          sintattici e ortografici.
-        </p>
-        <button @click="navigateTo('/draft')">Vai alla sezione</button>
-      </div>
-      <div class="grid-item">
-        <img src="@/assets/vue.svg" alt="Impaginazione" />
-        <h2>IMPAGINAZIONE</h2>
-        <p>
-          Renderemo il testo idoneo agli standard di impaginazione editoriale
-          con l'utilizzo di programmi professionali.
-        </p>
-        <button @click="navigateTo('/layout')">Vai alla sezione</button>
-      </div>
+      <div class="spacer"></div>
+    </section>
+    <div class="typeform">
+      <h1 style="margin-bottom: 1rem">Questionario</h1>
+      <!-- Typeform embed container -->
+      <div
+        ref="typeformEmbed"
+        data-tf-live="01HEYNMET73S4KYH8H2YB1CKVE"
+        style="width: 100%; height: 500px"
+      ></div>
     </div>
   </div>
 </template>
 
-<script>
-import { useRouter } from 'vue-router'
+<script setup>
+import { onMounted, ref } from 'vue'
 
-export default {
-  setup() {
-    const router = useRouter()
+const typeformEmbed = ref(null)
 
-    const navigateTo = (path) => {
-      router.push(path)
-    }
+onMounted(() => {
+  const script = document.createElement('script')
+  script.src = '//embed.typeform.com/next/embed.js'
+  script.async = true
+  script.defer = true
 
-    return { navigateTo }
-  },
-}
+  document.head.appendChild(script)
+})
 </script>
 <style scoped>
 .servizi {
+  width: 100%;
+  text-align: center;
+}
+
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
-  background-color: var(--one);
+  height: 80vh;
+  width: 100%;
+  background: url('/images/IMG_5963.JPG') no-repeat center center / cover;
 }
 
-.content {
+.services {
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: var(--one);
   padding: 1rem;
+}
+
+.service {
+  display: flex;
+  max-width: 40%;
+  background: var(--white);
+  box-shadow: 0 2px 5px var(--one);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.service-content,
+.service-image {
+  padding: 1rem;
+  flex: 1;
+}
+
+.service-content p {
+  width: 90%;
+  font-size: 20px;
+}
+
+.service-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.service-link {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #000;
+  color: var(--white);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.service-image img {
+  max-width: 40%;
+  height: auto;
 }
 
 p {
   color: #212121;
   width: 100%;
-  padding: 1rem 3rem;
-  text-align: justify;
+  font-size: 20px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.grid-item {
-  border: 1px solid #ccc;
-  padding: 20px;
-  text-align: center;
+h2 {
   color: #212121;
-}
-
-.grid-item img {
-  margin-bottom: 20px;
-}
-
-.grid-item h2 {
-  color: #cc0000;
-}
-
-.grid-item button {
-  margin-top: 20px;
+  font-size: 30px;
 }
 </style>

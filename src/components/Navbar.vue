@@ -11,19 +11,9 @@
     <router-link class="r_link" to="/blog" active-class="active-link">
       <span class="navbar_titles">Il Blog</span>
     </router-link>
-    <div class="dropdown">
-      <router-link class="dropbtn" to="/services"
-        >Servizi Editoriali</router-link
-      >
-      <div class="dropdown-content">
-        <router-link to="/draft">Correzione Bozze</router-link>
-        <router-link to="/ghost">Ghostwriting</router-link>
-        <router-link to="/guided">Scrittura Guidata</router-link>
-        <router-link to="/copy">Copywriting</router-link>
-        <router-link to="/assess">Valutazione Manoscritti</router-link>
-        <router-link to="/layout">Impaginazione</router-link>
-      </div>
-    </div>
+    <router-link class="r_link" to="/services"
+      ><span class="navbar_titles">Servizi Editoriali</span></router-link
+    >
     <router-link class="r_link" to="/contacts" active-class="active-link">
       <span class="navbar_titles">Contatti</span>
     </router-link>

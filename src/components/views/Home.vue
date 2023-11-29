@@ -158,6 +158,16 @@
 </template>
 <script setup></script>
 <style scoped>
+body::-webkit-scrollbar {
+  display: none;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
 .home {
   display: flex;
   align-items: center;
