@@ -164,11 +164,11 @@ button {
   box-shadow: var(--one) 0px 6px 12px -2px, var(--one) 0px 3px 7px -3px;
 }
 
-button:hover {
+/* button:hover {
   cursor: pointer;
   color: var(--primary);
   background: var(--white);
   font-weight: bold;
   transform: scale(1.2);
   margin: 1rem;
-}
+} */

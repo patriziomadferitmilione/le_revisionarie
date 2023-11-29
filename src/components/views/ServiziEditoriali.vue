@@ -4,57 +4,68 @@
       <h1>Servizi Editoriali</h1>
     </div>
 
-    <p>
-      Il nostro studio si impegna a seguire il testo in tutte le sue fasi di
-      lavorazione per accompagnarlo nella sua trasformazione in prodotto
-      editoriale: rivolgendoci sia a case editrici sia a singoli autori, ci
-      occupiamo dell'editing, della correzione di bozze, dell'impaginazione, del
-      ghostwriting e della formazione degli aspiranti scrittori attraverso corsi
-      pensati apposta per loro.
-    </p>
+    <div class="sub_header">
+      <p>
+        È arrivato il momento di trasformare il tuo libro nel cassetto nel libro
+        dei tuoi sogni. <br />
+        Per farlo, hai davanti a te due strade da seguire: sta a te scegliere
+        qual è quella che fa al caso tuo.
+      </p>
+      <br />
+      <br />
+      <h3>Scopri il percorso più adatto a te!</h3>
+    </div>
 
     <!-- Services Section -->
     <section class="services">
-      <div class="spacer"></div>
       <div class="service">
-        <div class="service-content">
-          <div class="service-image">
-            <!-- <w-icon size="5em"> fa fa-compass</w-icon> -->
-            <img src="/images/meridian.png" alt="" />
-          </div>
-          <h2>In Self</h2>
-          <p>
-            In self, ma non da solo: un percorso pensato per affiancare lo
-            scrittore che vuole autopubblicarsi.
-          </p>
-          <br />
+        <img src="/images/meridian.png" alt="" />
+        <h2>In Self</h2>
+        <p>
+          In self, ma non da solo: un percorso <br />
+          pensato per affiancare lo scrittore che vuole autopubblicarsi.
+        </p>
+        <div class="service_btn">
           <button>Scopri</button>
         </div>
       </div>
-      <div class="spacer"></div>
       <div class="service">
-        <div class="service-content">
-          <div class="service-image">
-            <img src="/images/typewriter.png" alt="mockup" />
-          </div>
-          <h2>On Shelf</h2>
-          <p>
-            Se il tuo sogno è vedere il tuo libro sugli scaffali delle librerie,
-            il primo passo e farlo uscire dal cassetto. Al resto pensiamo noi!
-          </p>
-          <br />
+        <img src="/images/typewriter.png" alt="mockup" />
+        <h2>On Shelf</h2>
+        <p>
+          Se il tuo sogno è vedere il tuo libro sugli <br />
+          scaffali delle librerie, il primo passo e farlo uscire dal cassetto.
+          Al resto pensiamo noi!
+        </p>
+        <div class="service_btn">
           <button>Scopri</button>
         </div>
       </div>
-      <div class="spacer"></div>
     </section>
+    <div class="actions">
+      <h2>Lavoriamo insieme sul tuo libro</h2>
+      <button>Contattaci</button>
+      <br />
+      <br />
+      <h2>
+        Se non sei sicuro di quale strada intraprendere, scoprilo con il nostro
+        questionario
+      </h2>
+    </div>
     <div class="typeform">
       <h1 style="margin-bottom: 1rem">Questionario</h1>
       <!-- Typeform embed container -->
       <div
         ref="typeformEmbed"
         data-tf-live="01HEYNMET73S4KYH8H2YB1CKVE"
-        style="width: 100%; height: 500px"
+        style="
+          width: 95%;
+          height: 500px;
+          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+            rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+          border-radius: 5px;
+          border: none;
+        "
       ></div>
     </div>
   </div>
@@ -84,75 +95,111 @@ onMounted(() => {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 90vh;
   width: 100%;
   background: url('/images/IMG_5963.JPG') no-repeat center center / cover;
 }
 
-.services {
-  height: fit-content;
+.sub_header {
+  height: 40vh;
+  text-align: center;
+  font-size: 25px;
+  padding: 1rem 3rem;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 3px 15px 1px inset;
+}
+
+.services {
+  height: 100vh;
+  display: flex;
   background-color: var(--one);
   padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
 }
 
 .service {
   display: flex;
   max-width: 40%;
+  height: 70vh;
   background: var(--white);
   box-shadow: 0 2px 5px var(--one);
   border-radius: 5px;
   text-align: center;
-}
-
-.service-content,
-.service-image {
-  padding: 1rem;
-  flex: 1;
-}
-
-.service-content p {
-  width: 90%;
-  font-size: 20px;
-}
-
-.service-content {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  flex-direction: column;
 }
 
-.service-link {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background: #000;
-  color: var(--white);
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+.service img {
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.service-image img {
-  max-width: 40%;
-  height: auto;
-}
+.service h2 {
+  font-family: 'Roboto Slab', serif;
 
-p {
-  color: #212121;
-  width: 100%;
-  font-size: 20px;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-h2 {
-  color: #212121;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 30px;
+}
+
+.service p {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  padding: 0 3rem;
+}
+
+.service .service_btn {
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.service .service_btn button {
+  width: 50%;
+  height: 60%;
+  font-size: 20px;
+}
+
+button:hover {
+  color: #212121;
+  background-color: var(--two);
+  cursor: pointer;
+}
+
+h3 {
+  font-family: 'Roboto Slab', serif;
+}
+
+.actions {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.typeform {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: var(--one) 0px 2px 4px 0px, var(--one) 0px 2px 16px 0px inset;
 }
 </style>
