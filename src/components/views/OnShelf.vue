@@ -56,6 +56,64 @@
       </p>
     </div>
 
+    <div class="service_section">
+      <h2 class="service_header">
+        DA SOGNO NEL CASSETTO A LIBRO DEI TUOI SOGNI
+      </h2>
+      <p class="service_subheader">
+        Cosa è compreso nel Percorso <em>on shelf</em>
+      </p>
+      <div class="services">
+        <div class="service">
+          <h3>Valutazione del manoscritto</h3>
+          <p>
+            Per capire se ci sono questioni irrisolte o errori da correggere,
+            bisogna prima trovarli!
+          </p>
+        </div>
+        <div class="service">
+          <h3>Editing</h3>
+          <p>
+            Dopo la fase di ricognizione, bisogna passare all'azione. Mettiamo
+            mano al testo (sempre e solo dopo il confronto con l'autore) per
+            dare il via alla sua trasformazione.
+          </p>
+        </div>
+        <div class="service">
+          <h3>Consulenza editoriale</h3>
+          <p>
+            Ma dove vai, se le regole del gioco non le sai? Ti guidiamo verso la
+            soluzione di pubblicazione più adatta a te.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="results_section">
+      <h2 class="results_header">COSA OTTERRAI</h2>
+      <div class="results">
+        <div class="result">
+          <h3>UN LIBRO PRONTO PER LA PUBBLICAZIONE</h3>
+          <p>
+            Non dovrai mai più disperarti per cercare beta-reader in giro per il
+            web o chiedere a tutti i tuoi amici cosa ne pensano: alla fine del
+            percorso avrai fra le tue mani un libro finito, corretto, completo.
+            Insomma, pronto per prendere il volo!
+          </p>
+        </div>
+        <div class="result">
+          <h3>
+            ORIENTAMENTO VERSO CASE EDITRICI INTERESSATE A TESTI COME IL TUO
+          </h3>
+          <p>
+            Potrà sorprenderti: ma molti autori non ricevono risposta alle loro
+            proposte di pubblicazione semplicemente perché pongono domande
+            sbagliate alle persone sbagliate. Con noi, questo non accadrà più.
+          </p>
+        </div>
+      </div>
+    </div>
+
     <div class="sub_header">
       <p>
         Scrivere qualcosa, sperare di essere pubblicati e non ricevere mai
@@ -65,6 +123,43 @@
         Per questo motivo, tantissimi scrittori mollano ancor prima di averci
         provato davvero. Non cascarci anche tu: rendi finalmente il tuo sogno
         una realtà!
+      </p>
+    </div>
+
+    <div class="collaboration_section">
+      <h2 class="collaboration_header">
+        Come avverrà il nostro lavoro insieme? Attraverso:
+      </h2>
+      <ul class="collaboration_list">
+        <li>
+          <span class="list_title">Confronto continuo:</span> ogni modifica da
+          noi proposta dovrà essere discussa e vagliata da te
+        </li>
+        <li>
+          <span class="list_title"
+            >Gruppo Telegram o Whatsapp sempre attivo</span
+          >
+          per qualsiasi dubbio o aggiornamento sui lavori
+        </li>
+        <li>
+          <span class="list_title">Videochiamate</span> per le comunicazioni più
+          impegnative
+        </li>
+      </ul>
+    </div>
+
+    <div class="sub_header">
+      <p>
+        Allora, sei pronto a metterti in gioco?
+        <br />
+        <br />
+        <button>
+          <a
+            href="https://calendly.com/lerevisionarie/callconoscitiva"
+            target="_blank"
+            >Prenota una call conoscitiva</a
+          >
+        </button>
       </p>
     </div>
   </div>
@@ -148,5 +243,111 @@ h1 {
   line-height: 1.4;
   color: #212121;
   padding: 0 4rem;
+}
+
+.service_section {
+  text-align: center;
+  padding: 4rem;
+}
+
+.service_header {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.service_subheader {
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service {
+  width: 30%;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  background: var(--white);
+}
+
+.service h3 {
+  font-size: 1.2em;
+  color: var(--primary-color);
+  margin-bottom: 1em;
+}
+
+.service p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.results_section {
+  padding: 4rem;
+  background: #f5f5f5;
+}
+
+.results_header {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.results {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.result {
+  width: 45%;
+  padding: 2rem;
+  margin: 1rem;
+  background: var(--white);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result h3 {
+  font-size: 1.4em;
+  color: var(--primary-color);
+  margin-bottom: 1em;
+}
+
+.result p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.collaboration_section {
+  padding: 4rem;
+  text-align: center;
+}
+
+.collaboration_header {
+  font-size: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.collaboration_list {
+  list-style-type: none; /* Remove default bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.collaboration_list li {
+  background: url('/path/to/bullet-image.svg') no-repeat left center; /* Replace with your bullet image path */
+  padding-left: 40px; /* Adjust depending on your bullet image size */
+  margin-bottom: 1rem; /* Space between list items */
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.list_title {
+  font-weight: bold;
 }
 </style>
