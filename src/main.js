@@ -16,32 +16,21 @@ import IlBlog from './components/views/IlBlog.vue'
 import Contatti from './components/views/Contatti.vue'
 import BlogCreator from './components/views/BlogCreator.vue'
 import LandingPage from './components/views/LandingPage.vue'
-import Typeform from './components/views/Typeform.vue'
-
-import ServiziEditoriali from './components/views/ServiziEditoriali.vue'
-import Copywriting from './components/servizi/Copywriting.vue'
-import CorrezioneBozze from './components/servizi/CorrezioneBozze.vue'
-import Ghostwriting from './components/servizi/Ghostwriting.vue'
-import Impaginazione from './components/servizi/Impaginazione.vue'
-import ScritturaGuidata from './components/servizi/ScritturaGuidata.vue'
-import ValutazioneManoscritti from './components/servizi/ValutazioneManoscritti.vue'
+import Percorsi from './components/views/Percorsi.vue'
+import OnShelf from './components/views/OnShelf.vue'
+import InSelf from './components/views/InSelf.vue'
 
 // Define application routes
 const routes = [
   { path: '/', component: Home, name: 'home' },
   { path: '/about', component: ChiSiamo },
   { path: '/blog', component: IlBlog },
-  { path: '/services', component: ServiziEditoriali },
-  { path: '/copy', component: Copywriting },
-  { path: '/draft', component: CorrezioneBozze },
-  { path: '/ghost', component: Ghostwriting },
-  { path: '/assess', component: ValutazioneManoscritti },
-  { path: '/layout', component: Impaginazione },
-  { path: '/guided', component: ScritturaGuidata },
+  { path: '/paths', component: Percorsi },
+  { path: '/onshelf', component: OnShelf },
+  { path: '/inself', component: InSelf },
   { path: '/contacts', component: Contatti },
   { path: '/blogcreator', component: BlogCreator },
   { path: '/landingpage', component: LandingPage },
-  { path: '/typeform', component: Typeform },
   { path: '/:catchAll(.*)', redirect: '/' },
 ]
 

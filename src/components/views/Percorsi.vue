@@ -25,9 +25,9 @@
           In self, ma non da solo: un percorso <br />
           pensato per affiancare lo scrittore che vuole autopubblicarsi.
         </p>
-        <div class="service_btn">
+        <router-link class="path_btn" to="/inself">
           <button>Scopri</button>
-        </div>
+        </router-link>
       </div>
       <div class="service">
         <img src="/images/typewriter.png" alt="mockup" />
@@ -37,9 +37,9 @@
           scaffali delle librerie, il primo passo e farlo uscire dal cassetto.
           Al resto pensiamo noi!
         </p>
-        <div class="service_btn">
+        <router-link class="path_btn" to="/onshelf">
           <button>Scopri</button>
-        </div>
+        </router-link>
       </div>
     </section>
     <div class="actions">
@@ -161,7 +161,7 @@ onMounted(() => {
   padding: 0 3rem;
 }
 
-.service .service_btn {
+.service .path_btn {
   height: 15%;
   display: flex;
   justify-content: center;
@@ -169,7 +169,7 @@ onMounted(() => {
   width: 100%;
 }
 
-.service .service_btn button {
+.service .path_btn button {
   width: 50%;
   height: 60%;
   font-size: 20px;

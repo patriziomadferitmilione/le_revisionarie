@@ -1,5 +1,4 @@
 <script>
-import Home from './components/views/Home.vue'
 import Navbar from './components/Navbar.vue'
 import Bottom from './components/Bottom.vue'
 

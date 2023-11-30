@@ -11,9 +11,9 @@
     <router-link class="r_link" to="/blog" active-class="active-link">
       <span class="navbar_titles">Il Blog</span>
     </router-link>
-    <router-link class="r_link" to="/services"
-      ><span class="navbar_titles">Servizi Editoriali</span></router-link
-    >
+    <router-link class="r_link" to="/paths" active-class="active-link">
+      <span class="navbar_titles">Percorsi</span>
+    </router-link>
     <router-link class="r_link" to="/contacts" active-class="active-link">
       <span class="navbar_titles">Contatti</span>
     </router-link>
