@@ -287,7 +287,7 @@ h1 {
 
 .results_section {
   padding: 4rem;
-  background: #f5f5f5;
+  background: var(--white);
 }
 
 .results_header {
