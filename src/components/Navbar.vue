@@ -2,7 +2,7 @@
   <w-toolbar class="navbar" height="15vh" fixed shadow>
     <div class="spacer"></div>
     <router-link to="/">
-      <img class="logo" src="/images/logo_giusto_nobg - Copy.png" alt="logo" />
+      <img class="logo" src="/images/logooo.png" alt="logo" />
     </router-link>
     <div class="spacer"></div>
     <router-link class="r_link" to="/" active-class="active-link">
