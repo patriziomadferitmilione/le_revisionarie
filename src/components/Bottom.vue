@@ -1,13 +1,13 @@
 <template>
   <w-toolbar class="bottom" bottom shadow>
     <div class="spacer"></div>
-    <w-card class="card_people3 ml3" shadow bg-color="black">
+    <w-card class="card_people1 ml3" shadow>
       <div class="inside_card">
         <h1>
-          <w-icon color="error-dark2" size=".8em"> fa fa-map-marker </w-icon>
+          <w-icon class="icona_map" size="1.5em"> fa fa-map-marker </w-icon>
           &nbsp;
           <a
-            style="color: white"
+            style="color: var(--two)"
             href="https://www.google.com/maps/place/Googleplex/@37.4220661,-122.0840897,17z"
             target="_blank"
             >Torino</a
@@ -16,7 +16,7 @@
       </div>
     </w-card>
     <div class="spacer"></div>
-    <w-card class="card_people3 ml3" shadow bg-color="black">
+    <w-card class="card_people2 ml3" shadow>
       <div class="inside_card2">
         <a href="elisa.cioffi@lerevisionarie.com">
           <w-icon color="white" size="1em"> fa fa-envelope </w-icon>
@@ -26,7 +26,7 @@
       </div>
     </w-card>
     <div class="spacer"></div>
-    <w-card class="card_people3 ml3" shadow bg-color="black">
+    <w-card class="card_people3 ml3" shadow>
       <div class="inside_card3">
         <h4>
           <a style="color: white" href="tel:+393341932598"
@@ -45,14 +45,20 @@
     <div class="spacer"></div>
     <a href="https://www.instagram.com/lerevisionarie/" target="_blank"
       ><span class="ml2"
-        ><w-icon size="1.5em"> fa fa-instagram </w-icon> &nbsp;
+        ><w-icon style="color: var(--one)" size="2.5em">
+          fa fa-instagram
+        </w-icon>
+        &nbsp;
       </span></a
     >
     <a
       href="https://www.linkedin.com/company/le-revisionarie/?originalSubdomain=it"
       target="_blank"
       ><span class="ml2"
-        ><w-icon size="1.5em"> fa fa-linkedin-square </w-icon> &nbsp;</span
+        ><w-icon style="color: var(--one)" size="2.5em">
+          fa fa-linkedin-square
+        </w-icon>
+        &nbsp;</span
       ></a
     >
     <a
@@ -60,7 +66,10 @@
       target="_blank"
     >
       <span class="ml2"
-        ><w-icon size="1.5em"> fa fa-facebook </w-icon> &nbsp;</span
+        ><w-icon style="color: var(--one)" size="2.5em">
+          fa fa-facebook
+        </w-icon>
+        &nbsp;</span
       ></a
     >
     <div class="spacer"></div>
@@ -73,6 +82,7 @@ export default {}
 .bottom {
   height: 30vh;
   padding: 2rem;
+  background-color: var(--two) !important;
 }
 
 .bottom h1 {
@@ -116,5 +126,15 @@ export default {}
 
 .inside_card3:hover {
   cursor: pointer;
+}
+
+.card_people3,
+.card_people2,
+.card_people1 {
+  background-color: var(--four);
+}
+
+.icona_map {
+  color: var(--two);
 }
 </style>

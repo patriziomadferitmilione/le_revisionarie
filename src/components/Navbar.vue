@@ -2,9 +2,12 @@
   <w-toolbar class="navbar" height="15vh" fixed shadow>
     <div class="spacer"></div>
     <router-link to="/">
-      <img class="logo" src="/images/logo.png" alt="logo" />
+      <img class="logo" src="/images/logo_giusto_nobg - Copy.png" alt="logo" />
     </router-link>
     <div class="spacer"></div>
+    <router-link class="r_link" to="/" active-class="active-link">
+      <span class="navbar_titles">Home</span>
+    </router-link>
     <router-link class="r_link" to="/about" active-class="active-link">
       <span class="navbar_titles">Chi Siamo</span>
     </router-link>
@@ -16,9 +19,6 @@
     </router-link>
     <router-link class="r_link" to="/contacts" active-class="active-link">
       <span class="navbar_titles">Contatti</span>
-    </router-link>
-    <router-link class="r_link" to="/typeform" active-class="active-link">
-      <span class="navbar_titles">Questionario</span>
     </router-link>
     <div class="spacer"></div>
   </w-toolbar>
@@ -68,7 +68,7 @@ export default {
 }
 
 .logo {
-  height: 15vh;
+  height: 45vh;
 }
 
 .active-link {
@@ -98,7 +98,7 @@ a {
 
 a:hover {
   cursor: pointer;
-  color: var(--link);
+  color: var(--two);
 }
 
 .menu-item {

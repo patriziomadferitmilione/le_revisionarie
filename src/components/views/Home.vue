@@ -11,9 +11,9 @@
       <router-link class="r_link" to="/landingpage" active-class="active-link">
         <span class="navbar_titles">Landing Page</span>
       </router-link>
-      <router-link class="r_link" to="/blogcreator" active-class="active-link">
+      <!-- <router-link class="r_link" to="/blogcreator" active-class="active-link">
         <span class="navbar_titles">Blog Creator</span>
-      </router-link>
+      </router-link> -->
     </div>
     <!-- HEADER -->
     <w-card class="header">

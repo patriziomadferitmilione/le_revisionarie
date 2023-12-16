@@ -1,5 +1,26 @@
 <template>
   <div class="container">
+    Chi sono Le Revisionarie? Una domanda che apre tante porte: a livello
+    esistenziale, professionale, personale... Per due logorroiche come noi non è
+    semplice rispondere in poche parole. Ma se cerchiamo una risposta essenziale
+    che possa farvi capire chi siamo e che ci stiamo a fare qui, ci viene in
+    mente un'immagine ben precisa: noi dalla parte delle vostre storie, sempre.
+    Due ragazze appassionate di libri che, negli anni dell'università, tra un
+    esame di Letterature comparate e incalcolabili tazze di caffè, hanno
+    ricamato un sogno insieme e lo hanno inseguito attraverso anni di studio e
+    formazione. Due millenials che per rincorrere questo sogno hanno fatto un
+    grande "ciaone" al posto fisso e si sono create uno spazio in cui fare il
+    lavoro dei loro sogni. E questo posto è quel luogo magico in cui nascono le
+    storie, in cui gli autori elaborano e danno un senso alla realtà che ci sta
+    intorno attraverso le loro parole. Dopo aver capito che era questo il luogo
+    in cui volevamo prendere posizione, abbiamo deciso che ci saremmo impegnate
+    per renderlo uno spazio di accoglienza, ascolto e creatività condivisa, per
+    essere ciò di cui chi scrive ha bisogno per portare a termine il suo
+    obiettivo. Questo, in "poche" parole (siamo logorroiche, vi avevamo
+    avvisato) è ciò su cui si fonda lo studio editoriale Le Revisionarie.
+    L'obiettivo è guidare chi vuole scrivere una storia a realizzare il suo
+    sogno, perché è anche il nostro. Sei prontə per tirare fuori il tuo libro
+    dal cassetto? Siamo qui per te 🌟
     <div class="content chiara">
       <div class="image-section">
         <img src="/images/IMG_5996.JPG" alt="Chiara Cioffi" />

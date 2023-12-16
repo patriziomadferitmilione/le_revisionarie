@@ -14,7 +14,7 @@ import Home from './components/views/Home.vue'
 import ChiSiamo from './components/views/ChiSiamo.vue'
 import IlBlog from './components/views/IlBlog.vue'
 import Contatti from './components/views/Contatti.vue'
-import BlogCreator from './components/views/BlogCreator.vue'
+// import BlogCreator from './components/views/BlogCreator.vue'
 import LandingPage from './components/views/LandingPage.vue'
 import Percorsi from './components/views/Percorsi.vue'
 import OnShelf from './components/views/OnShelf.vue'
@@ -29,7 +29,7 @@ const routes = [
   { path: '/onshelf', component: OnShelf },
   { path: '/inself', component: InSelf },
   { path: '/contacts', component: Contatti },
-  { path: '/blogcreator', component: BlogCreator },
+  // { path: '/blogcreator', component: BlogCreator },
   { path: '/landingpage', component: LandingPage },
   { path: '/:catchAll(.*)', redirect: '/' },
 ]

@@ -1,12 +1,14 @@
 <template>
   <div class="onshelf">
     <div class="header">
+      <h2>percorso</h2>
       <h1>On Shelf</h1>
     </div>
 
-    <div class="sub_header">
-      <p>
-        Se vuoi che il tuo libro arrivi sugli scaffali delle librerie, <br />
+    <div class="sub_header" style="background-color: var(--one); height: 60vh">
+      <p style="color: var(--two); font-size: 35px">
+        Se vuoi che il tuo libro arrivi <b>sugli scaffali</b> delle librerie,
+        <br />
         prima devi tirarlo fuori dal cassetto e dargli una bella sistemata.
         <br />
         <br />
@@ -17,42 +19,55 @@
       </p>
     </div>
 
-    <div class="content">
-      <div class="image-section">
-        <img src="/images/IMG_6077.JPG" alt="onshelf" />
-      </div>
-      <div class="text-section">
-        <h1>Le Revisionarie</h1>
-        <h2>Percorso On Shelf</h2>
-        <br />
-        <p>
-          Hai scritto qualcosa che secondo te è buono. <br />
-          Non lo hai mai pensato, ma mentre sei alle prese con la <br />
-          scrittura ti convinci sempre di più che la tua storia potrebbe
-          diventare qualcosa di più di un semplice passatempo. <br /><br />
-          Ti arrovelli per capire come arrivare alle <br />
-          case editrici, ma è difficile. <br />
-          E in più, come puoi sapere se ciò che hai scritto è buono <br />
-          per davvero, o se è solo una tua impressione? <br /><br />
-          Ti suona familiare? <br />
+    <div class="content_header">
+      <h2 class="content_header_title">Percorso On Shelf</h2>
+      <div class="content">
+        <div class="image-section">
+          <img src="/images/IMG_5773.JPG" alt="onshelf" />
+        </div>
+        <div class="text-section">
           <br />
-          Tranquillo, non sei il solo a trovarti in questa situazione. <br />
-          Anzi! è molto più comune di quanto credi.
-        </p>
+          <p>
+            Hai scritto qualcosa che secondo te è buono. <br />
+            <br />
+            Non lo hai mai pensato, ma mentre sei alle prese con la <br />
+            scrittura ti convinci sempre di più che la tua storia potrebbe
+            diventare
+            <b style="color: var(--one)"
+              >qualcosa di più di un semplice passatempo.</b
+            >
+            <br /><br />
+            Ti arrovelli per capire come
+            <b style="color: var(--one)"
+              >arrivare alle <br />
+              case editrici,</b
+            >
+            ma è difficile. <br />
+            E in più, come puoi sapere se ciò che hai scritto è buono <br />
+            per davvero, o se è solo una tua impressione? <br /><br />
+            Ti suona familiare? <br />
+            <br />
+            Tranquillo, <b style="color: var(--one)">non sei il solo</b> a
+            trovarti in questa situazione.
+            <br />
+            <br />
+            Anzi! È molto più comune di quanto credi.
+          </p>
+        </div>
       </div>
     </div>
 
     <div class="sub_header">
-      <p>
-        Anche se a volte uscirne sembra impossibile, <br />
-        per farlo hai soltanto bisogno di una guida! <br />
-        Una bussola che ti aiuti ad orientarti nel burrascoso mare del mondo
-        editoriale. <br />
+      <p style="font-size: 30px">
+        Anche se a volte uscirne sembra impossibile, per farlo hai soltanto
+        bisogno di una <b style="color: var(--one)">guida!</b> <br />
+        Una <b style="color: var(--one)">bussola</b> che ti aiuti ad orientarti
+        nel burrascoso mare del mondo editoriale. <br />
         <br />
         Alla fine del nostro lavoro insieme il tuo manoscritto sarà in forma
         smagliante, <br />
-        pronto a sbaragliare la concorrenza e attirare tutti gli sguardi su di
-        sé.
+        pronto a <b style="color: var(--one)">sbaragliare la concorrenza</b> e
+        attirare tutti gli sguardi su di sé.
       </p>
     </div>
 
@@ -106,7 +121,7 @@
             ORIENTAMENTO VERSO CASE EDITRICI INTERESSATE A TESTI COME IL TUO
           </h3>
           <p>
-            Potrà sorprenderti: ma molti autori non ricevono risposta alle loro
+            Potrà sorprenderti, ma molti autori non ricevono risposta alle loro
             proposte di pubblicazione semplicemente perché pongono domande
             sbagliate alle persone sbagliate. Con noi, questo non accadrà più.
           </p>
@@ -148,12 +163,12 @@
       </ul>
     </div>
 
-    <div class="sub_header">
+    <div class="sub_header_bottom">
       <p>
         Allora, sei pronto a metterti in gioco?
         <br />
         <br />
-        <button>
+        <button class="btn_bottom">
           <a
             href="https://calendly.com/lerevisionarie/callconoscitiva"
             target="_blank"
@@ -177,15 +192,38 @@ export default {}
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 90vh;
   width: 100%;
-  background: url('/images/IMG_6138.JPG') no-repeat center center / cover;
+  background: url('/images/6138_60.png') no-repeat center center / cover;
+}
+
+.header h1 {
+  font-size: 200px;
+  color: var(--one);
+  font-family: 'Covered By Your Grace';
+}
+
+.header h2 {
+  font-size: 40px;
+  color: var(--one);
 }
 
 .sub_header {
   height: 40vh;
   text-align: center;
   font-size: 25px;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 3px 15px 1px inset;
+}
+.sub_header_bottom {
+  height: 40vh;
+  text-align: center;
+  font-size: 40px;
   padding: 1rem 3rem;
   display: flex;
   justify-content: center;
@@ -207,9 +245,24 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.content_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
-  height: 100vh;
-  margin-bottom: 2rem;
+  height: 90vh;
+  position: relative;
+}
+
+.content_header_title {
+  font-size: 40px;
+  color: var(--one);
+  position: absolute;
+  z-index: 100;
+  top: 5%;
+  left: 5%;
 }
 
 .content .image-section {
@@ -222,7 +275,9 @@ h1 {
 }
 
 .image-section img {
-  width: 100%;
+  height: 85vh;
+  border-radius: 15px;
+  box-shadow: 3px 4px 8px var(--one);
 }
 
 .text-section h2,
@@ -239,25 +294,29 @@ h1 {
 }
 
 .text-section p {
-  font-size: 20px;
+  font-size: 23px;
   line-height: 1.4;
   color: #212121;
   padding: 0 4rem;
+  text-align: left;
 }
 
 .service_section {
   text-align: center;
   padding: 4rem;
+  background-color: var(--one);
 }
 
 .service_header {
   font-size: 2em;
   margin-bottom: 0.5em;
+  color: var(--two);
 }
 
 .service_subheader {
   font-size: 1.5em;
   margin-bottom: 2em;
+  color: var(--two);
 }
 
 .services {
@@ -268,31 +327,37 @@ h1 {
 .service {
   width: 30%;
   padding: 2rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 4px 8px var(--two);
   margin: 1rem;
   background: var(--white);
+  border-radius: 5px;
 }
 
 .service h3 {
-  font-size: 1.2em;
-  color: var(--primary-color);
-  margin-bottom: 1em;
+  font-size: 1.5em;
+  color: var(--one);
+  margin-bottom: 1.5em;
 }
 
 .service p {
   font-size: 1em;
-  line-height: 1.6;
+  line-height: 1.3;
   color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: column;
 }
 
 .results_section {
   padding: 4rem;
-  background: var(--white);
+  background: var(--two);
 }
 
 .results_header {
-  font-size: 2em;
+  font-size: 2.5em;
   margin-bottom: 1em;
+  color: var(--one);
 }
 
 .results {
@@ -307,18 +372,25 @@ h1 {
   margin: 1rem;
   background: var(--white);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  height: 28vh;
 }
 
 .result h3 {
   font-size: 1.4em;
-  color: var(--primary-color);
-  margin-bottom: 1em;
+  color: var(--one);
+  margin-bottom: 2rem;
+  height: 30%;
 }
 
 .result p {
   font-size: 1em;
-  line-height: 1.6;
+  line-height: 1.3;
   color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: column;
 }
 
 .collaboration_section {
@@ -349,5 +421,23 @@ h1 {
 
 .list_title {
   font-weight: bold;
+}
+
+.btn_bottom {
+  font-size: 30px;
+  padding: 1rem;
+  box-shadow: 3px 4px 8px var(--one);
+}
+
+.btn_bottom:hover {
+  background-color: var(--two);
+  box-shadow: 3px 4px 8px var(--two);
+}
+
+.btn_bottom a {
+  color: var(--two);
+}
+.btn_bottom a:hover {
+  color: var(--one);
 }
 </style>
