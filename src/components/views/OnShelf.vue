@@ -25,7 +25,7 @@
         <div class="image-section">
           <img src="/images/IMG_5773.JPG" alt="onshelf" />
         </div>
-        <div class="text-section">
+        <div class="text-section" style="margin-top: 5rem">
           <br />
           <p>
             Hai scritto qualcosa che secondo te è buono. <br />
@@ -80,7 +80,7 @@
       </p>
       <div class="services">
         <div class="service">
-          <h3>Valutazione del manoscritto</h3>
+          <h3>Valutazione manoscritti</h3>
           <p>
             Per capire se ci sono questioni irrisolte o errori da correggere,
             bisogna prima trovarli!
@@ -210,7 +210,7 @@ export default {}
 }
 
 .sub_header {
-  height: 40vh;
+  height: 50vh;
   text-align: center;
   font-size: 25px;
   padding: 1rem 3rem;
@@ -245,6 +245,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 3rem 0;
 }
 .content_header {
   display: flex;
@@ -252,7 +253,6 @@ h1 {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 90vh;
   position: relative;
 }
 
@@ -308,13 +308,13 @@ h1 {
 }
 
 .service_header {
-  font-size: 2em;
+  font-size: 2.5em;
   margin-bottom: 0.5em;
   color: var(--two);
 }
 
 .service_subheader {
-  font-size: 1.5em;
+  font-size: 2em;
   margin-bottom: 2em;
   color: var(--two);
 }
@@ -331,22 +331,25 @@ h1 {
   margin: 1rem;
   background: var(--white);
   border-radius: 5px;
+  min-height: fit-content;
 }
 
 .service h3 {
-  font-size: 1.5em;
+  font-size: 2.5em;
   color: var(--one);
   margin-bottom: 1.5em;
+  height: 20%;
 }
 
 .service p {
-  font-size: 1em;
+  font-size: 25px;
   line-height: 1.3;
   color: var(--text-color);
   display: flex;
   justify-content: center;
   align-items: baseline;
   flex-direction: column;
+  margin-bottom: 1rem;
 }
 
 .results_section {
@@ -373,18 +376,18 @@ h1 {
   background: var(--white);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  height: 28vh;
+  height: 50vh;
 }
 
 .result h3 {
-  font-size: 1.4em;
+  font-size: 1.6em;
   color: var(--one);
   margin-bottom: 2rem;
   height: 30%;
 }
 
 .result p {
-  font-size: 1em;
+  font-size: 1.4em;
   line-height: 1.3;
   color: var(--text-color);
   display: flex;

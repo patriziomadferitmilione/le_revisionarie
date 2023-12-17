@@ -97,7 +97,14 @@ onMounted(() => {
   align-items: center;
   height: 90vh;
   width: 100%;
-  background: url('/images/IMG_5963.JPG') no-repeat center center / cover;
+  background: url('/images/5963_60.png') no-repeat center center / cover;
+}
+
+.header h1 {
+  font-size: 200px;
+  color: var(--one);
+  font-family: 'Covered By Your Grace';
+  text-shadow: 10px 0 10px var(--two);
 }
 
 .sub_header {

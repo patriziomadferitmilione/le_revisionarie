@@ -63,18 +63,20 @@
         </p>
       </div>
       <div class="header_card_3">
-        <p>
-          Il nostro intento è quello di aiutarti a trovare la tua voce come
-          scrittore, e per renderlo possibile ti offriamo diversi servizi
-          pensati per guidarti attraverso tutte le fasi che portano un testo a
-          diventare un libro.
+        <p class="header_p">
+          Il nostro intento è quello di aiutarti a
+          <b style="color: var(--two)">trovare la tua voce</b> come scrittore, e
+          per renderlo possibile ti offriamo diversi servizi pensati per
+          guidarti attraverso tutte le fasi che portano un testo a
+          <b style="color: var(--two)">diventare un libro.</b>
           <br />
           <br />
           Ti meriti la possibilità di condividere la tua storia con il mondo e
-          <b>sai perché?</b> Perché <b>solo</b> tu puoi raccontarla, nessun
+          <b style="color: var(--two)">sai perché?</b> Perché
+          <b style="color: var(--two)">solo</b> tu puoi raccontarla, nessun
           altro.
         </p>
-        <img src="/images/guida.jpg" alt="home_header" />
+        <img src="/images/chi_siamo_.png" alt="home_header" />
       </div>
     </w-card>
 
@@ -191,6 +193,11 @@ html::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+}
+
+.header_card_3 {
+  background-color: var(--one);
+  height: 70vh;
 }
 
 .header_card p,
@@ -332,6 +339,14 @@ button {
 
 .privacy-check label {
   font-size: 0.75rem;
+}
+
+.header_p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--white);
 }
 
 /* Responsive adjustments */
