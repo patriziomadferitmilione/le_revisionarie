@@ -16,69 +16,102 @@
       </router-link> -->
     </div>
     <!-- HEADER -->
-    <w-card class="header">
-      <div class="header_card">
-        <p>
-          Siamo Chiara Cioffi e Doralice Treglia, classe 1994.
-          <br />
-          <br />
-          Dopo la laurea in Culture Moderne Comparate, ci siamo tuffate nel
-          mondo dell'editoria lavorando come redattrici freelance per circa due
-          anni.
-          <br />
-          <br />
-          Ma questa posizione non ci dava modo di esprimere tutta la nostra
-          creatività e di lavorare seguendo i nostri principi.
-          <br />
-          <br />
-          Lo studio nasce dalla nostra <b>passione per le storie</b> e dal
-          nostro desiderio di metterci dalla parte di chi le crea.
-          <br />
-          <br />
-          <br />
-          <button>Ti raccontiamo la nostra storia</button>
-        </p>
-        <img src="/images/IMG_5927.JPG" alt="home_header" />
+      <div class="onshelf">
+    <div class="banner">
+       <p>
+            Siamo Chiara Cioffi e Doralice Treglia, classe 1994.
+       </p >
+            <p>
+            Dopo la laurea in Culture Moderne Comparate, ci siamo tuffate nel
+            mondo dell'editoria lavorando come redattrici freelance per circa
+            due anni.
+            Ma questa posizione non ci dava modo di esprimere tutta la nostra
+            creatività e di lavorare seguendo i nostri principi.
+            Lo studio nasce dalla nostra <b style="color: var(--one);">passione per le storie</b> e dal
+            nostro desiderio di metterci dalla parte di chi le crea.
+            </p>
+            
+            <div class="header_btn"><button>Ti raccontiamo la nostra storia</button></div>
+              </div>
       </div>
-      <div class="header_card_2">
-        <img src="/images/IMG_5955.JPG" alt="home_header" />
+      <div class="header">
+      <div class="header_row">
+        <div class="header_p">
+          <p>
+            Siamo Chiara Cioffi e Doralice Treglia, classe 1994.
+            <br />
+            <br />
+            Dopo la laurea in Culture Moderne Comparate, ci siamo tuffate nel
+            mondo dell'editoria lavorando come redattrici freelance per circa
+            due anni.
+            <br />
+            <br />
+            Ma questa posizione non ci dava modo di esprimere tutta la nostra
+            creatività e di lavorare seguendo i nostri principi.
+            <br />
+            <br />
+            Lo studio nasce dalla nostra <b>passione per le storie</b> e dal
+            nostro desiderio di metterci dalla parte di chi le crea.
+            <br />
+            <br />
+            <div class="header_btn"><button>Ti raccontiamo la nostra storia</button></div>
+          </p>
+        </div>
+        <div class="header_img">
+          <img src="/images/IMG_5927.JPG" alt="home_header" />
+        </div>
+      </div>
+<div class="sub_header">
+          <p>
+            Ma nasce anche dalla nostra <b>amicizia</b>: è il nostro legame a
+            dare un valore aggiunto al lavoro che facciamo con i nostri autori,
+            che con noi possono sentirsi accolti, compresi e valorizzati.
+            <br />
+            <br />
+            Da lettrici accanite, il nostro pane quotidiano sono le storie.
+            <br />
+            <br />
+            Abbiamo affiancato a questa passione anni di formazione attraverso
+            corsi incentrati sul mondo editoriale e sulle sue figure
+            professionali.
+            <br />
+            <br />
+            Tutte queste competenze sono messe al servizio degli autori che
+            hanno una storia da raccontare e hanno bisogno di una bussola per
+            orientarsi in questo universo complicato.
+          </p>
+        </div>
+        </div>
+<!-- 
+      <div class="header_row_2">
 
-        <p>
-          Ma nasce anche dalla nostra <b>amicizia</b>: è il nostro legame a dare
-          un valore aggiunto al lavoro che facciamo con i nostri autori, che con
-          noi possono sentirsi accolti, compresi e valorizzati.
-          <br />
-          <br />
-          Da lettrici accanite, il nostro pane quotidiano sono le storie.
-          <br />
-          <br />
-          Abbiamo affiancato a questa passione anni di formazione attraverso
-          corsi incentrati sul mondo editoriale e sulle sue figure
-          professionali.
-          <br />
-          <br />
-          Tutte queste competenze sono messe al servizio degli autori che hanno
-          una storia da raccontare e hanno bisogno di una bussola per orientarsi
-          in questo universo complicato.
-        </p>
+        <div class="header_img">
+          <img src="/images/IMG_5955.JPG" alt="home_header" />
+        </div>
+
+        
+      </div> -->
+      
+    <div class="header_row_3">
+        <div class="header_p">
+          <p>
+            Il nostro intento è quello di aiutarti a
+            <b style="color: var(--two)">trovare la tua voce</b> come scrittore,
+            e per renderlo possibile ti offriamo diversi servizi pensati per
+            guidarti attraverso tutte le fasi che portano un testo a
+            <b style="color: var(--two)">diventare un libro.</b>
+            <br />
+            <br />
+            Ti meriti la possibilità di condividere la tua storia con il mondo e
+            <b style="color: var(--two)">sai perché?</b> Perché
+            <b style="color: var(--two)">solo</b> tu puoi raccontarla, nessun
+            altro.
+          </p>
+        </div>
+        <div class="header_img">
+          <img src="/images/chi_siamo_.png" alt="home_header" />
+        </div>
       </div>
-      <div class="header_card_3">
-        <p class="header_p">
-          Il nostro intento è quello di aiutarti a
-          <b style="color: var(--two)">trovare la tua voce</b> come scrittore, e
-          per renderlo possibile ti offriamo diversi servizi pensati per
-          guidarti attraverso tutte le fasi che portano un testo a
-          <b style="color: var(--two)">diventare un libro.</b>
-          <br />
-          <br />
-          Ti meriti la possibilità di condividere la tua storia con il mondo e
-          <b style="color: var(--two)">sai perché?</b> Perché
-          <b style="color: var(--two)">solo</b> tu puoi raccontarla, nessun
-          altro.
-        </p>
-        <img src="/images/chi_siamo_.png" alt="home_header" />
-      </div>
-    </w-card>
 
     <!-- Services Section -->
     <section class="services">
@@ -170,48 +203,155 @@ html::-webkit-scrollbar {
   display: none;
 }
 
+
+.onshelf {
+  width: 100%;
+  text-align: center;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+  width: 100%;
+  background: url('/images/5960_30.png') no-repeat center center / cover;
+  
+}
+
+.banner p:nth-child(1) {
+font-size: 3rem;
+text-align: justify;
+color: var(--one);
+ text-shadow: 1px 1px 3px var(--two);
+ font-weight: bold;
+
+margin-bottom: .5rem;
+}
+.banner p:nth-child(2) {
+font-size: 2rem;
+text-align: justify;
+margin-bottom: .5rem;
+ text-shadow: 2.5px 2.5px 3px var(--two);
+padding: 1rem 3rem;
+}
+.banner p:nth-child(3) {
+font-size: 2rem;
+text-align: center;
+margin-bottom: .5rem;
+
+}
+
 .home {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: black;
   overflow: scroll;
 }
 
 .header {
   width: 100%;
   height: fit-content;
-  text-align: center;
+  padding: 1rem;
 }
 
-.header_card,
-.header_card_2,
-.header_card_3,
-.header_card_4 {
+.header_row,
+.header_row_2,
+.header_row_3 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
 
-.header_card_3 {
+.header_row_3 {
+  width: 100vw;
   background-color: var(--one);
-  height: 70vh;
+  height: 90vh;
+  }
+
+
+.header_row_3 img {
+  width: 40vw;
 }
 
-.header_card p,
-.header_card_2 p,
-.header_card_3 p,
-.header_card_4 p {
-  height: 100%;
-  width: 50%;
-  font-size: 22px;
+.header_row_3 .header_p p {
+   color: var(--two);
+   line-height: 1.5;
+font-size: 1.6rem;
+}
+
+.header_p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header_p p {
+  line-height: 1.4;
+  font-size: 1.3rem;
+  padding: 1rem 3rem;
+}
+
+.header_row .header_img img {
+  width: 30vw;
+  border-radius: 5px;
+  box-shadow: 3px 4px 8px var(--one);
+}
+
+.header_row_2 .header_img img {
+  width: 50vw;
+  border-radius: 5px;
+  box-shadow: 3px 4px 8px var(--one);
+}
+
+.header_btn {
+  width: 100%;
+  text-align: center;
+}
+
+.header_btn button {
+  font-size: 25px;
+  width: fit-content;
+  padding: 1rem;
+  background-color: var(--one);
+  color: var(--two);
+  box-shadow: 3px 4px 8px var(--one);
+}
+
+
+.header_btn button:hover {
+  cursor: pointer;
+  color: var(--one);
+  background-color: var(--two);
+  box-shadow: 3px 4px 8px var(--one);
 }
 
 .header_card_4 p {
   width: 80%;
 }
+
+.sub_header {
+  height: 70vh;
+  text-align: center;
+  font-size: 25px;
+  padding: 1rem 3rem;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 3px 15px 1px inset;
+border-radius: 5px;
+display: flex;
+justify-content: center
+;
+align-items: center;
+}
+
+
+
+
+
+
 
 .right {
   display: flex;
@@ -220,23 +360,7 @@ html::-webkit-scrollbar {
   flex-direction: column;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-}
 
-.header_card img {
-  width: 30%;
-}
-.header_card_2 img {
-  width: 40%;
-}
-.header_card_3 img {
-  width: 30%;
-}
 
 .header_card_4 img {
   width: 50%;
@@ -278,15 +402,6 @@ form {
   text-align: center;
 }
 
-.service-link {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background: #000;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
 
 .service-image img {
   max-width: 40%;
@@ -330,29 +445,5 @@ button {
   background-color: #e60094;
 }
 
-.privacy-check {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
-}
 
-.privacy-check label {
-  font-size: 0.75rem;
-}
-
-.header_p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: var(--white);
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .subscription-form {
-    width: 100%;
-  }
-}
 </style>
