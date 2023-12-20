@@ -129,38 +129,56 @@
       </div>
     </div>
 
-    <div class="sub_header">
-      <p>
-        Scrivere qualcosa, sperare di essere pubblicati e non ricevere mai
-        risposta dagli editori è terribilmente demoralizzante.
-        <br />
-        <br />
-        Per questo motivo, tantissimi scrittori mollano ancor prima di averci
-        provato davvero. Non cascarci anche tu: rendi finalmente il tuo sogno
-        una realtà!
-      </p>
-    </div>
-
     <div class="collaboration_section">
-      <h2 class="collaboration_header">
-        Come avverrà il nostro lavoro insieme? Attraverso:
-      </h2>
-      <ul class="collaboration_list">
-        <li>
-          <span class="list_title">Confronto continuo:</span> ogni modifica da
-          noi proposta dovrà essere discussa e vagliata da te
-        </li>
-        <li>
-          <span class="list_title"
-            >Gruppo Telegram o Whatsapp sempre attivo</span
-          >
-          per qualsiasi dubbio o aggiornamento sui lavori
-        </li>
-        <li>
-          <span class="list_title">Videochiamate</span> per le comunicazioni più
-          impegnative
-        </li>
-      </ul>
+      <div class="text_section" style="padding: 1rem 3rem">
+        <p>
+          Scrivere qualcosa, sperare di
+          <b style="color: var(--one)">essere pubblicati</b> e non ricevere mai
+          risposta dagli editori è terribilmente demoralizzante.
+        </p>
+        <br />
+        <p>
+          Per questo motivo,
+          <b style="color: var(--one)">tantissimi scrittori mollano</b> ancor
+          prima di averci provato davvero.
+        </p>
+        <br />
+        <p style="margin-bottom: 2rem">
+          Non cascarci anche tu: <br />
+          rendi finalmente il tuo sogno
+          <b style="color: var(--one)">una realtá!</b>
+        </p>
+        <h2 class="collaboration_header">
+          Come avverrà il nostro lavoro insieme? Attraverso:
+        </h2>
+        <table class="collaboration_table">
+          <tr>
+            <td><w-icon size="1.5em">fa fa-comments</w-icon></td>
+            <td>
+              <strong>Confronto continuo:</strong> <br />
+              ogni modifica da noi proposta dovrà essere discussa e vagliata da
+              te
+            </td>
+          </tr>
+          <tr>
+            <td><w-icon size="1.5em">fa fa-whatsapp</w-icon></td>
+            <td>
+              <strong>Gruppo Telegram o Whatsapp sempre attivo</strong> <br />
+              per qualsiasi dubbio o aggiornamento sui lavori
+            </td>
+          </tr>
+          <tr>
+            <td><w-icon size="1.5em">fa fa-headphones</w-icon></td>
+            <td>
+              <strong>Videochiamate</strong> <br />
+              per le comunicazioni più impegnative
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="picture_section">
+        <img src="/images/IMG_5927.JPG" alt="Descriptive Alt Text" />
+      </div>
     </div>
 
     <div class="sub_header_bottom">
@@ -397,33 +415,42 @@ h1 {
 }
 
 .collaboration_section {
-  padding: 4rem;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  font-size: 1.5rem;
+  height: 120vh;
+}
+
+.text_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 0 4rem;
+}
+
+.text_section,
+.picture_section {
+  flex: 1;
+  padding: 1rem;
+}
+
+.picture_section img {
+  width: 100%;
+  height: auto;
+  max-height: 100vh;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 3px 4px 8px var(--two);
 }
 
 .collaboration_header {
-  font-size: 2em;
+  font-size: 1.1em;
   margin-bottom: 1em;
   text-align: center;
-}
-
-.collaboration_list {
-  list-style-type: none; /* Remove default bullets */
-  padding: 0;
-  margin: 0;
-}
-
-.collaboration_list li {
-  background: url('/path/to/bullet-image.svg') no-repeat left center; /* Replace with your bullet image path */
-  padding-left: 40px; /* Adjust depending on your bullet image size */
-  margin-bottom: 1rem; /* Space between list items */
-  text-align: center;
-  font-size: 1em;
-  line-height: 1.6;
-}
-
-.list_title {
-  font-weight: bold;
 }
 
 .btn_bottom {
@@ -442,5 +469,29 @@ h1 {
 }
 .btn_bottom a:hover {
   color: var(--one);
+}
+
+.collaboration_table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+}
+
+.collaboration_table td,
+.collaboration_table th {
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1.4rem;
+  border-top: 1px solid var(--two);
+  border-bottom: 1px solid var(--two);
+}
+
+.collaboration_table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #4caf50;
+  color: white;
 }
 </style>
