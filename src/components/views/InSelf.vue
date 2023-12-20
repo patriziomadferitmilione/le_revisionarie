@@ -6,176 +6,71 @@
     </div>
 
     <div class="sub_header" style="background-color: var(--four); height: 60vh">
-      <p style="color: var(--two); font-size: 35px">
-        Se vuoi che il tuo libro arrivi <b>sugli scaffali</b> delle librerie,
-        <br />
-        prima devi tirarlo fuori dal cassetto e dargli una bella sistemata.
-        <br />
-        <br />
-        Presentarsi a un editore è il momento più importante nella vita di un
-        manoscritto, <br />
-        non vorrai mica mandarlo all'appuntamento tutto malconcio e spettinato,
-        no?
+      <p style="color: var(--two); font-size: 2.5rem">
+        Diciamolo forte e chiaro:
+      </p>
+      <p style="color: var(--two); font-size: 3.5rem">
+        IL SELF-PUBLISHING NON È L'ULTIMA SPIAGGIA DI CHI NON È RIUSCITO A
+        PUBBLICARE ALTROVE.
       </p>
     </div>
 
     <div class="content_header">
-      <h2 class="content_header_title">Percorso On Shelf</h2>
+      <h2 class="content_header_title">Percorso In Self</h2>
       <div class="content">
         <div class="image-section">
-          <img src="/images/IMG_5773.JPG" alt="onshelf" />
+          <img src="/images/IMG_6132.JPG" alt="onshelf" />
         </div>
         <div class="text-section">
           <br />
           <p>
-            Hai scritto qualcosa che secondo te è buono. <br />
-            <br />
-            Non lo hai mai pensato, ma mentre sei alle prese con la <br />
-            scrittura ti convinci sempre di più che la tua storia potrebbe
-            diventare
-            <b style="color: var(--one)"
-              >qualcosa di più di un semplice passatempo.</b
-            >
-            <br /><br />
-            Ti arrovelli per capire come
-            <b style="color: var(--one)"
-              >arrivare alle <br />
-              case editrici,</b
-            >
-            ma è difficile. <br />
-            E in più, come puoi sapere se ciò che hai scritto è buono <br />
-            per davvero, o se è solo una tua impressione? <br /><br />
-            Ti suona familiare? <br />
-            <br />
-            Tranquillo, <b style="color: var(--one)">non sei il solo</b> a
-            trovarti in questa situazione.
-            <br />
-            <br />
-            Anzi! È molto più comune di quanto credi.
+            L'editoria moderna sta cominciando a riconoscere al mondo del self e
+            della letteratura indie il suo giusto merito, andando ad abbattere
+            <b style="color: var(--one)">giudizi e stereotipi </b>.
+          </p>
+          <br />
+          <p>
+            Forse anche tu sei tentato di approcciarti al mondo del
+            self-publishing, ma non vuoi essere visto come
+            <b style="color: var(--one)">lo scrittore che non ce l'ha fatta</b>
+            con l'editoria tradizionale e quindi, rifiutato da tutti, decide di
+            autopubblicarsi.
+          </p>
+          <br />
+          <p>
+            Se è così, siamo felici di comunicarti che puoi anche
+            <b style="color: var(--one)">smettere di tormentarti</b>:
+            fortunatamente, il mondo della letteratura indipendente sta
+            cominciando a godere del riconoscimento che merita!
           </p>
         </div>
       </div>
     </div>
 
-    <div class="sub_header">
-      <p style="font-size: 30px">
-        Anche se a volte uscirne sembra impossibile, per farlo hai soltanto
-        bisogno di una <b style="color: var(--one)">guida!</b> <br />
-        Una <b style="color: var(--one)">bussola</b> che ti aiuti ad orientarti
-        nel burrascoso mare del mondo editoriale. <br />
-        <br />
-        Alla fine del nostro lavoro insieme il tuo manoscritto sarà in forma
-        smagliante, <br />
-        pronto a <b style="color: var(--one)">sbaragliare la concorrenza</b> e
-        attirare tutti gli sguardi su di sé.
-      </p>
-    </div>
-
-    <div class="service_section">
-      <h2 class="service_header">
-        DA SOGNO NEL CASSETTO A LIBRO DEI TUOI SOGNI
-      </h2>
-      <p class="service_subheader">
-        Cosa è compreso nel Percorso <em>on shelf</em>
-      </p>
-      <div class="services">
-        <div class="service">
-          <h3>Valutazione del manoscritto</h3>
-          <p>
-            Per capire se ci sono questioni irrisolte o errori da correggere,
-            bisogna prima trovarli!
-          </p>
+    <div class="content_header">
+      <div class="content">
+        <div class="image-section-2">
+          <img src="/images/IMG_6136.JPG" alt="onshelf" />
         </div>
-        <div class="service">
-          <h3>Editing</h3>
+        <div class="text-section">
+          <br />
           <p>
-            Dopo la fase di ricognizione, bisogna passare all'azione. Mettiamo
-            mano al testo (sempre e solo dopo il confronto con l'autore) per
-            dare il via alla sua trasformazione.
+            Pubblicare in self-publishing, oggi, vuol dire potersi avvalere di
+            <b style="color: var(--one)">guadagni maggiori</b>, avere un solido
+            <b style="color: var(--one)">controllo sulle vendite</b> del tuo
+            libro e poter partecipare in prima persona al processo di
+            <b style="color: var(--one)">creazione del libro</b> stesso.
           </p>
-        </div>
-        <div class="service">
-          <h3>Consulenza editoriale</h3>
+          <br />
           <p>
-            Ma dove vai, se le regole del gioco non le sai? Ti guidiamo verso la
-            soluzione di pubblicazione più adatta a te.
+            Inoltre, sono sempre di più i
+            <b style="color: var(--one)">librai</b> che si mostrano solidali con
+            gli autori indie, e decidono di accogliere nelle loro librerie testi
+            non provenienti da case editrici, ma sponsorizzati dai singoli
+            autori.
           </p>
         </div>
       </div>
-    </div>
-
-    <div class="results_section">
-      <h2 class="results_header">COSA OTTERRAI</h2>
-      <div class="results">
-        <div class="result">
-          <h3>UN LIBRO PRONTO PER LA PUBBLICAZIONE</h3>
-          <p>
-            Non dovrai mai più disperarti per cercare beta-reader in giro per il
-            web o chiedere a tutti i tuoi amici cosa ne pensano: alla fine del
-            percorso avrai fra le tue mani un libro finito, corretto, completo.
-            Insomma, pronto per prendere il volo!
-          </p>
-        </div>
-        <div class="result">
-          <h3>
-            ORIENTAMENTO VERSO CASE EDITRICI INTERESSATE A TESTI COME IL TUO
-          </h3>
-          <p>
-            Potrà sorprenderti, ma molti autori non ricevono risposta alle loro
-            proposte di pubblicazione semplicemente perché pongono domande
-            sbagliate alle persone sbagliate. Con noi, questo non accadrà più.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="sub_header">
-      <p>
-        Scrivere qualcosa, sperare di essere pubblicati e non ricevere mai
-        risposta dagli editori è terribilmente demoralizzante.
-        <br />
-        <br />
-        Per questo motivo, tantissimi scrittori mollano ancor prima di averci
-        provato davvero. Non cascarci anche tu: rendi finalmente il tuo sogno
-        una realtà!
-      </p>
-    </div>
-
-    <div class="collaboration_section">
-      <h2 class="collaboration_header">
-        Come avverrà il nostro lavoro insieme? Attraverso:
-      </h2>
-      <ul class="collaboration_list">
-        <li>
-          <span class="list_title">Confronto continuo:</span> ogni modifica da
-          noi proposta dovrà essere discussa e vagliata da te
-        </li>
-        <li>
-          <span class="list_title"
-            >Gruppo Telegram o Whatsapp sempre attivo</span
-          >
-          per qualsiasi dubbio o aggiornamento sui lavori
-        </li>
-        <li>
-          <span class="list_title">Videochiamate</span> per le comunicazioni più
-          impegnative
-        </li>
-      </ul>
-    </div>
-
-    <div class="sub_header_bottom">
-      <p>
-        Allora, sei pronto a metterti in gioco?
-        <br />
-        <br />
-        <button class="btn_bottom">
-          <a
-            href="https://calendly.com/lerevisionarie/callconoscitiva"
-            target="_blank"
-            >Prenota una call conoscitiva</a
-          >
-        </button>
-      </p>
     </div>
   </div>
 </template>
@@ -251,13 +146,20 @@ h1 {
   align-items: center;
 }
 
+.content:nth-child(1) {
+  background: linear-gradient(to top right, var(--two) 50%, var(--white) 50%);
+}
+.content:nth-child(2) {
+  background: linear-gradient(to top left, var(--two) 50%, var(--white) 50%);
+}
+
 .content_header {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   position: relative;
 }
 
@@ -267,21 +169,32 @@ h1 {
   position: absolute;
   z-index: 100;
   top: 5%;
-  left: 5%;
+  left: 13%;
 }
 
-.content .image-section {
+.content .image-section,
+.content .image-section-2 {
   order: 2;
 }
 
-.image-section,
 .text-section {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.image-section img {
-  height: 85vh;
-  border-radius: 15px;
+.image-section,
+.image-section-2 {
+  flex: 1;
+  padding: 1rem;
+}
+
+.image-section img,
+.image-section-2 img {
+  max-width: 99%;
+  border-radius: 5px;
   box-shadow: 3px 4px 8px var(--one);
 }
 
@@ -299,7 +212,7 @@ h1 {
 }
 
 .text-section p {
-  font-size: 23px;
+  font-size: 1.5rem;
   line-height: 1.4;
   color: #212121;
   padding: 0 4rem;
