@@ -332,7 +332,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  height: 70vh;
+  height: 80vh;
   text-align: center;
 }
 
@@ -341,12 +341,13 @@
 }
 
 .form_right {
-  height: 100vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 1rem 3rem;
+  font-size: 1.7rem;
 }
 
 .services {
@@ -356,6 +357,7 @@
   justify-content: space-around;
   background-color: var(--one);
   padding: 1rem;
+  padding-bottom: 3rem;
 }
 
 .service {
@@ -399,7 +401,7 @@
   padding: 1rem;
   background-color: var(--one);
   color: var(--two);
-  box-shadow: 3px 4px 8px var(--one);
+  box-shadow: 3px 4px 8px var(--two);
   margin-bottom: 1rem;
 }
 
@@ -428,34 +430,42 @@ button {
   display: none;
 }
 
+.bottom_form img {
+  box-shadow: 3px 4px 8px var(--one);
+  margin-right: 2rem;
+}
+
 .bottom_form input[type='text'],
 .bottom_form input[type='email'] {
-  width: 60%;
-  padding: 10px;
+  width: 70%;
+  padding: 0.5rem;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
+  border: 2px solid var(--white);
   border-radius: 5px;
   text-align: center;
+  font-family: 'DM Sans';
 }
 
 .bottom_form button {
-  width: 100%;
+  width: 70%;
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #e91e63;
+  background-color: var(--one);
   color: white;
   font-weight: bold;
   cursor: pointer;
   margin-bottom: 10px;
+  box-shadow: 3px 4px 8px var(--two);
 }
 
 .bottom_form button:hover {
-  background-color: #c2185b;
+  background-color: var(--two);
+  box-shadow: 3px 4px 8px var(--one);
 }
 
 .bottom_form input[type='checkbox'] {
-  margin-right: 10px;
+  margin-right: 0.5rem;
 }
 
 .img {
