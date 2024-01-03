@@ -41,7 +41,7 @@
         Sei prontə per tirare fuori il tuo libro dal cassetto? Siamo
         <b style="color: var(--one)">qui per te</b>
       </p>
-      🌟
+      <!-- 🌟 -->
     </div>
 
     <div class="content_chiara">

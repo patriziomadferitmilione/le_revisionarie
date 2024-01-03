@@ -72,6 +72,51 @@
         </div>
       </div>
     </div>
+
+    <div class="sub_header">
+      <p>
+        Ma allora, <b style="color: var(--one)">cosa serve al tuo libro</b> per
+        riuscire a fare concorrenza a quelli pubblicati <br />
+        dalle case editrici? Molto banalmente, il lavoro che i vari
+        professionisti dipendenti <br />
+        delle case editrici fanno sul tuo testo:
+        <b style="color: var(--one)">editing</b>,
+        <b style="color: var(--one)">correzione di bozze</b>, <br />
+        realizzazione della <b style="color: var(--one)">copertina</b>,
+        <b style="color: var(--one)">pubblicazione</b> e
+        <b style="color: var(--one)">promozione</b>.
+      </p>
+      <br />
+      <br />
+      <p style="font-size: 2rem">
+        E se ti dicessimo che anche tu potresti avere tutto questo <br />
+        senza essere costretto a passare per l'editoria tradizionale?
+      </p>
+    </div>
+    <div
+      class="sub_header"
+      style="
+        background-color: var(--four);
+        height: 35vh;
+        box-shadow: 3px 0 5px -2px rgba(0, 0, 0, 0.56),
+          -3px 0 5px -2px rgba(0, 0, 0, 0.56),
+          0 -3px 5px -2px rgba(0, 0, 0, 0.56);
+      "
+    >
+      <p style="color: var(--two); font-size: 2rem">
+        per te abbiamo creato il percorso
+      </p>
+      <p style="color: var(--two); font-size: 5rem">In Self</p>
+    </div>
+    <div class="sub_header_2">
+      <p>
+        Di cosa si tratta? In self è un percorso che accompagna gli autori che
+        vogliono autopubblicarsi lungo tutto l'impervio cammino che porta
+        all'effettiva pubblicazione del proprio libro. Ma noi abbiamo deciso di
+        non fermarci qui: una volta che avremo trasformato il tuo manoscritto in
+        un libro vero, non ti abbandoneremo a te stesso.
+      </p>
+    </div>
   </div>
 </template>
 <script>
@@ -108,7 +153,7 @@ export default {}
 }
 
 .sub_header {
-  height: 40vh;
+  height: 60vh;
   text-align: center;
   font-size: 25px;
   padding: 1rem 3rem;
@@ -119,20 +164,20 @@ export default {}
   box-shadow: rgba(0, 0, 0, 0.56) 0px 3px 15px 1px inset;
 }
 
-.sub_header_bottom {
-  height: 40vh;
+.sub_header p {
+  line-height: 1.4;
+}
+
+.sub_header_2 {
+  height: 30vh;
   text-align: center;
-  font-size: 40px;
+  font-size: 25px;
   padding: 1rem 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 3px 15px 1px inset;
-}
-
-.sub_header p {
-  line-height: 1.4;
+  background-color: var(--four);
 }
 
 h1 {
@@ -217,145 +262,5 @@ h1 {
   color: #212121;
   padding: 0 4rem;
   text-align: left;
-}
-
-.service_section {
-  text-align: center;
-  padding: 4rem;
-  background-color: var(--one);
-}
-
-.service_header {
-  font-size: 2em;
-  margin-bottom: 0.5em;
-  color: var(--two);
-}
-
-.service_subheader {
-  font-size: 1.5em;
-  margin-bottom: 2em;
-  color: var(--two);
-}
-
-.services {
-  display: flex;
-  justify-content: space-between;
-}
-
-.service {
-  width: 30%;
-  padding: 2rem;
-  box-shadow: 3px 4px 8px var(--two);
-  margin: 1rem;
-  background: var(--white);
-  border-radius: 5px;
-}
-
-.service h3 {
-  font-size: 1.5em;
-  color: var(--one);
-  margin-bottom: 1.5em;
-}
-
-.service p {
-  font-size: 1em;
-  line-height: 1.3;
-  color: var(--text-color);
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  flex-direction: column;
-}
-
-.results_section {
-  padding: 4rem;
-  background: var(--two);
-}
-
-.results_header {
-  font-size: 2.5em;
-  margin-bottom: 1em;
-  color: var(--one);
-}
-
-.results {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.result {
-  width: 45%;
-  padding: 2rem;
-  margin: 1rem;
-  background: var(--white);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  height: 28vh;
-}
-
-.result h3 {
-  font-size: 1.4em;
-  color: var(--one);
-  margin-bottom: 2rem;
-  height: 30%;
-}
-
-.result p {
-  font-size: 1em;
-  line-height: 1.3;
-  color: var(--text-color);
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  flex-direction: column;
-}
-
-.collaboration_section {
-  padding: 4rem;
-  text-align: center;
-}
-
-.collaboration_header {
-  font-size: 2em;
-  margin-bottom: 1em;
-  text-align: center;
-}
-
-.collaboration_list {
-  list-style-type: none; /* Remove default bullets */
-  padding: 0;
-  margin: 0;
-}
-
-.collaboration_list li {
-  background: url('/path/to/bullet-image.svg') no-repeat left center; /* Replace with your bullet image path */
-  padding-left: 40px; /* Adjust depending on your bullet image size */
-  margin-bottom: 1rem; /* Space between list items */
-  text-align: center;
-  font-size: 1em;
-  line-height: 1.6;
-}
-
-.list_title {
-  font-weight: bold;
-}
-
-.btn_bottom {
-  font-size: 30px;
-  padding: 1rem;
-  box-shadow: 3px 4px 8px var(--one);
-}
-
-.btn_bottom:hover {
-  background-color: var(--two);
-  box-shadow: 3px 4px 8px var(--two);
-}
-
-.btn_bottom a {
-  color: var(--two);
-}
-.btn_bottom a:hover {
-  color: var(--one);
 }
 </style>
