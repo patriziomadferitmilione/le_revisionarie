@@ -42,17 +42,19 @@
         </router-link>
       </div>
     </section>
-    <div class="actions">
-      <h2>Lavoriamo insieme sul tuo libro</h2>
-      <button>Contattaci</button>
-      <br />
-      <br />
-      <h2>
-        Se non sei sicuro di quale strada intraprendere, scoprilo con il nostro
-        questionario
-      </h2>
-    </div>
+
     <div class="typeform">
+      <h2>Lavoriamo insieme sul tuo libro</h2>
+      <!-- Router Link replacing the button -->
+      <router-link class="path_btn" to="/contacts">
+        <button>Contattaci</button>
+      </router-link>
+      <br />
+      <h3>
+        Se non sei sicuro di quale strada intraprendere, <br />
+        scoprilo con il nostro questionario
+      </h3>
+      <br />
       <!-- Typeform embed container -->
       <div
         ref="typeformEmbed"
@@ -191,21 +193,32 @@ h3 {
   font-family: 'Roboto Slab', serif;
 }
 
-.actions {
-  height: 40vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 2rem;
-}
-
 .typeform {
-  height: 100vh;
+  height: 115vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   box-shadow: var(--one) 0px 2px 4px 0px, var(--one) 0px 2px 16px 0px inset;
+}
+
+.typeform h2 {
+  font-size: 2.5rem;
+}
+.typeform h3 {
+  font-size: 2rem;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.path_btn button {
+  width: 20vw;
+  height: 6vh;
+  font-size: 20px;
+}
+
+.path_btn button:hover {
+  color: #212121;
+  background-color: var(--two);
+  cursor: pointer;
 }
 </style>
