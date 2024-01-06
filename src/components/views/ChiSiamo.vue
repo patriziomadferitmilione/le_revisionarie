@@ -23,7 +23,7 @@
       <p>
         E questo posto è quel luogo magico in cui nascono le storie, in cui gli
         autori elaborano e danno un senso alla realtà che ci sta intorno
-        attraverso le loro parole. >Dopo aver capito che era questo il luogo in
+        attraverso le loro parole. Dopo aver capito che era questo il luogo in
         cui volevamo prendere posizione, abbiamo deciso che ci saremmo impegnate
         per renderlo uno spazio di accoglienza, ascolto e creatività condivisa,
         per essere ciò di cui chi scrive ha bisogno per portare a termine il suo

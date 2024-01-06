@@ -53,7 +53,6 @@
       </h2>
     </div>
     <div class="typeform">
-      <h1 style="margin-bottom: 1rem">Questionario</h1>
       <!-- Typeform embed container -->
       <div
         ref="typeformEmbed"
